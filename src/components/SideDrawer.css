@@ -1,0 +1,88 @@
+.sideDrawer {
+    position: fixed;
+    width: 300px;
+    max-width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color: rgb(228, 221, 213);
+    z-index: 200;
+    padding: 16px;
+    font-size: 1.3rem;
+    transition: 0.3s
+}
+
+.openDrawer {
+    transform: translateX(0);
+}
+
+.closeDrawer {
+    transform: translateX(-100%);
+}
+
+.drawerlogo {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: auto;
+}
+
+.sideDrawer h3 {
+    margin: 10px auto;
+    font-weight: 300;
+    border-bottom: 1px dotted #888;
+    text-align: center;
+}
+
+.closeButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sideDrawer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 4% 5%;
+    align-items: left;
+    width: auto;
+    list-style: none;
+}
+
+.sideDrawer ul li {
+    margin: 2% 0;
+}
+
+.sideDrawer ul li a:link,
+.sideDrawer ul li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.sideDrawer ul li a:hover {
+    border-bottom: 1px solid #777;
+    color: #000;
+    transition: 0.2s;
+}
+
+.sideDrawer ul li a:active {
+    border-bottom: 1px solid orange;
+    transition: 0.2s;
+}
+
+@media (min-width: 670px) {
+    .sideDrawer {
+        display: none;
+    }
+}

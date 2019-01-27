@@ -1,0 +1,76 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 56px;
+    width: 100%;
+    background-color: rgb(228, 221, 213);
+}
+
+.NavBar img {
+    margin: 5px 30px;
+    height: 80%;
+    width: auto;
+}
+
+.NavBar h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.NavBar ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 4%;
+    justify-content: right;
+    align-items: center;
+    width: auto;
+    padding: 0;
+}
+
+.NavBar ul li {
+    display: inline-block;
+    width: auto;
+    list-style: none;
+    border-right: 1px solid #aaa;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-family: "Noto Serif TC", serif;
+}
+
+.NavBar ul li::before {
+    content: "\200B";
+}
+
+.NavBar ul li a:link,
+.NavBar ul li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.NavBar ul li a:hover {
+    border-bottom: 1px solid #777;
+    color: #000;
+    transition: 0.2s;
+}
+
+.NavBar ul li a:active {
+    border-bottom: 1px solid orange;
+    transition: 0.2s;
+}
+
+@media (max-width: 670px) {
+    .NavBar ul {
+        display: none;
+    }
+
+    .navBar img:hover {
+        cursor: pointer;
+    }
+}

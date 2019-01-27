@@ -1,0 +1,12 @@
+.footer {
+    background-color: #222;
+    margin: 0;
+    padding: 1% 2%;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: white;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+.pageTurner {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageTurner i {
+    font-size: 30px;
+    margin: 1%;
+    border: 1px solid #888;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.pageTurner i:hover {
+    background-color: rgb(248, 229, 203);
+    cursor: pointer;
+}
+
+.hidePageButton {
+    display: none;
+}

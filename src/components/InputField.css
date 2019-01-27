@@ -1,0 +1,23 @@
+.inputFields {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2% 2%;
+    font-size: 1rem;
+    font-family: "Noto Serif TC", serif;
+}
+
+.inputFields input {
+    display: inline-block;
+    width: 50%;
+    font-size: 1rem;
+    padding: 2% 3%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .inputFields {
+        padding: 2% 0;
+        width: 90%;
+    }
+}

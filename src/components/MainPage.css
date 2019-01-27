@@ -1,0 +1,37 @@
+.MainPage {
+    width: 70%;
+    margin: 2% auto;
+    border: 1px solid #999;
+    border-radius: 30px;
+    background-color: white;
+    font-family: "Noto Serif TC", serif;
+}
+
+.MainPage h3 {
+    padding: 0 2%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.MainPage p {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 8px 16px;
+}
+
+.MainPage p:last-child {
+    padding-bottom: 16px;
+}
+
+.MainPage ul {
+    margin: 1% 0;
+}
+
+.MainPage ul li {
+    list-style: square;
+}
+
+.MainPage hr {
+    width: 70%;
+}
