@@ -10,8 +10,8 @@ class Elective extends React.PureComponent {
     }
 
     selectChangeHandler = (event) => {
-        this.props.changeElective(this.state.value);
-        this.setState({ value: event.target.value }, () => this.props.dropdown(this.state.value));
+        this.props.changeElective(this.state.value, event.target.value);
+        this.setState({ value: event.target.value });
     }
 
     componentWillUnmount() {

@@ -40,25 +40,17 @@ class Calculator extends React.Component {
         this.setState({ electiveCount: this.state.electiveCount - 1});
     }
 
-    electiveChangeHandler = value => {
+    electiveChangeHandler = (oldValue, newValue) => {
+        console.log(`OldValue: ${oldValue}, newValue: ${newValue}`)
         const newList = [...this.state.electiveList];
-        const newScore = {...this.state.score};
-        const orgGrade = newScore.elective[value];
-        let index = newList.indexOf(value);
-        if (index === -1) return; 
-        newList.splice(index, 1);
-        delete newScore.elective[value];
-        newScore.elective.temp = orgGrade;
+        const newScore = JSON.parse(JSON.stringify(this.state.score));
+        const orgGrade = newScore.elective[oldValue];
+        let index = newList.indexOf(oldValue);
+        index !== -1 ? newList[index] = newValue : newList.push(newValue);
+        delete newScore.elective[oldValue];
+        newScore.elective[newValue] = orgGrade;
+        console.log(`newScore: ${newScore}, newList: ${newList}`);
         this.setState({ score: newScore , electiveList: newList });
-    }
-
-    electiveAddHandler = (name) => {
-        const newList = [...this.state.electiveList];
-        const newScore = {...this.state.score};
-        newScore.elective[name] = newScore.elective.temp;
-        delete newScore.elective.temp;
-        newList.push(name);
-        this.setState({ score: newScore, electiveList: newList });
     }
 
     aMathHandler = event => {
