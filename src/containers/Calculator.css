@@ -91,7 +91,23 @@
     transition: 0.2s;
 }
 
+.alert {
+    margin: 3% auto;
+    padding: 3%;
+    width: 80%;
+    background-color: #fabbbb;
+}
+.alert p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 @media (max-width: 700px) {
+    .calculator {
+        width: 90%;
+    }
+    
     .inputContainer {
         flex-direction: column;
         justify-items: flex-start;

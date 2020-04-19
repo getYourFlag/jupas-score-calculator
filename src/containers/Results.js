@@ -2,7 +2,7 @@ import React from "react";
 import "./Results.css";
 import { Redirect } from "react-router-dom";
 
-import courseList from "../data/newCourseData.json";
+import courseList from "../data/courseData.json";
 import { uniNames } from "../data/university.json";
 import admissionStyles from "../data/admissionStyles.json";
 import Backdrop from "../components/UI/Backdrop";

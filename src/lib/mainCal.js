@@ -1,8 +1,8 @@
-import courseList from "../data/newCourseData.json";
+import courseList from "../data/courseData.json";
 import Result from "../lib/Results";
 import { basicElectiveRequirements, otherLangRatio } from "../data/university.json"
 
-function calculate(score) {
+function calculate(score, isRetaker = false) {
     let calculateResult = {};
     for (let courseCode in courseList) {
         let course = courseList[courseCode];
@@ -12,18 +12,23 @@ function calculate(score) {
         let weighting = course.weighting || {};
 
         let result = new Result(score, weighting, specifications);
-        calculateResult[courseCode] = calculateChance(result, course);
+        calculateResult[courseCode] = calculateChance(result, course, isRetaker);
     }
     return calculateResult;
 }
 
-function calculateChance(result, course) {
+function calculateChance(result, course, isRetaker = false) {
     let [electiveCount, electiveGrade] = basicElectiveRequirements[course.school];
 
     let eligibility = result.checkProgramRequirements(course.requirement, electiveCount, electiveGrade); // Score object will be mutated.
     if (!eligibility) return {chance: -1, score: "--"};
 
     let admissionScore = calculateScore(result, course);
+
+    if (course.specifications && course.specifications.retakeRatio && isRetaker) {
+        admissionScore = admissionScore * course.specifications.retakeRatio;
+    }
+
     return {chance: giveChance(admissionScore, course), score: admissionScore};
 }
 
@@ -52,11 +57,15 @@ function giveChance(admissionScore, course) {
     if (diff === 0) diff = Math.round(course.median / 20);
     let uq = course.uq || course.median + diff;
     let min = course.min || course.lq - diff;
-    if (admissionScore > uq) return 4;
-    if (admissionScore >= course.median) return 3;
-    if (admissionScore >= course.lq) return 2;
-    if (admissionScore >= min) return 1;
-    return 0;
+    if (admissionScore >= course.median) {
+        if (admissionScore > uq) return 4;
+        return 3;
+    } else if (admissionScore >= min) {
+        if (admissionScore >= course.lq) return 2;
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 export default calculate;

@@ -86,7 +86,28 @@ class Calculator extends React.Component {
 
     calculationHandler = () => {
         let score = {...this.state.score};
-        let result = calculate(score);
+
+        // Validation
+        let electiveCount = 0;
+        let mainSubjects = ["chinese", "english", "maths", "ls"];
+
+        for (let subject in score) {
+            let index = mainSubjects.indexOf(subject);
+            if (index === -1 && score[subject]) {
+                electiveCount += 1; 
+            } else {
+                mainSubjects.splice(index, 1);
+            }
+        }
+
+        if (mainSubjects.length !== 0) {
+            return this.setState({error: "你並未輸入全部主修科的成績！"});
+        } else if (electiveCount === 0) {
+            return this.setState({error: "你並未輸入任何選修科的資料！"});
+        }
+
+        // Calculate
+        let result = calculate(score, this.state.retaker);
         this.props.redirect(result, () => {this.setState({calculated: true})});
     }
 
@@ -100,6 +121,7 @@ class Calculator extends React.Component {
         let increElective = this.state.electiveCount >= 4;
         let decreElective = this.state.electiveCount <= 1;
         let aMathInput = null; let otherLangInput = null; let electiveItems = [];
+        let errorMessage = null;
 
         if (this.state.aMath) {
             aMathInput = <InputField 
@@ -112,6 +134,11 @@ class Calculator extends React.Component {
                 id="otherLang" 
                 changed={this.otherLangChangeHandler}
             >成績：</InputField>;
+        }
+        if (this.state.error) {
+            errorMessage = (<div className="alert">
+                <p>{this.state.error}</p>
+            </div>);
         }
 
         for (let i = 0; i < this.state.electiveCount; i++) {
@@ -166,10 +193,10 @@ class Calculator extends React.Component {
                         {otherLangInput}
                     </div>
 
-                    <p><span>重讀生專用</span></p>
+                    <p><span>考生資料</span></p>
                     <div className="inputContainer" onChange={this.retakeHandler}>
                         <div>
-                            <label>重讀生請勾選：</label><input type="checkbox" onClick={this.retakeHandler} />
+                            <label>是否重讀生：</label><input type="checkbox" onClick={this.retakeHandler} />
                         </div>
                     </div>
 
@@ -177,6 +204,8 @@ class Calculator extends React.Component {
                 <div className="submit">
                     <button onClick={this.calculationHandler}>計算</button>
                 </div>
+
+                {errorMessage}
             </div>
         )
     }

@@ -50,7 +50,6 @@ class Result {
 
     checkUniversityRequirements(electiveMinGrade = 2, electiveMinCount = 1) {
         if (this.rawScore.chinese < 3 || this.rawScore.english < 3 || this.rawScore.maths < 2 || this.rawScore.ls < 2) return false;
-
         let countedElectives = [];
         for (let i = 0; i < electiveMinCount; i++) {
             let [name, score] = this.getBestElective(null, countedElectives, true, false);
