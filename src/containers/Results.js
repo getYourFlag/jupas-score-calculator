@@ -2,8 +2,9 @@ import React from "react";
 import "./Results.css";
 import { Redirect } from "react-router-dom";
 
-import { courseData } from "../data/courseData.json";
-import uniNames from "../data/uniNames.json";
+import courseList from "../data/newCourseData.json";
+import { uniNames } from "../data/university.json";
+import admissionStyles from "../data/admissionStyles.json";
 import Backdrop from "../components/UI/Backdrop";
 import PageTurn from "../components/UI/PageTurn";
 import CourseNote from "../components/UI/courseNote";
@@ -46,55 +47,28 @@ class Results extends React.Component {
     }
 
     render() {
-        // if (!this.props.result) return <Redirect to="/cal" />
+        if (!this.props.result) return <Redirect to="/cal" />
 
         let resultKeys = []; let calResultsArr = [];
         if (this.props.result && this.state.currentUni) {
-            resultKeys = Object.keys(this.props.result).filter(key => courseData[key].school === this.state.currentUni);
+            resultKeys = Object.keys(this.props.result).filter(key => courseList[key].school === this.state.currentUni);
         }
         let resultKeysTotalLength = resultKeys.length;
         let startIndex = (this.state.pageNum - 1) * 15;
         resultKeys = resultKeys.slice(startIndex, startIndex + 15);
 
         for (let course of resultKeys) {
-            let admissionChance = null;
-            let admissionStyle = "";
-            switch (this.props.result[course].chance) {
-                case 4:
-                    admissionChance = "非常高";
-                    admissionStyle = "admVeryHigh";
-                    break;
-                case 3:
-                    admissionChance = "頗高";
-                    admissionStyle = "admHigh";
-                    break;
-                case 2:
-                    admissionChance = "中等";
-                    admissionStyle = "admMid";
-                    break;
-                case 1:
-                    admissionChance = "偏低";
-                    admissionStyle = "admLow";
-                    break;
-                case 0:
-                    admissionChance = "難以入讀";
-                    admissionStyle = "admNo";
-                    break;
-                default:
-                    admissionChance = "不符合條件";
-                    admissionStyle = "admImpossible";
-            }
-
+            let [admissionChance, admissionStyle] = admissionStyles[this.props.result[course].chance];
             let row = (
-                <tbody key={courseData[course].code}>
+                <tbody key={courseList[course].code}>
                     <tr>
-                        <td className="subjectCode">{courseData[course].code}</td>
+                        <td className="subjectCode">{courseList[course].code}</td>
                         <td 
-                            className={courseData[course].note ? "additionalInfo" : ""}
-                            onClick={() => courseData[course].note ? this.openModalToggler(courseData[course].note): null}
-                            >{courseData[course].name}</td>
-                        <td className="calMethod">{courseData[course].showMethod}</td>
-                        <td>{courseData[course].median}</td>
+                            className={courseList[course].note ? "additionalInfo" : ""}
+                            onClick={() => courseList[course].note ? this.openModalToggler(courseList[course].note): null}
+                            >{courseList[course].name}</td>
+                        <td className="calMethod">{courseList[course].showMethod}</td>
+                        <td>{courseList[course].median}</td>
                         <td>{this.props.result[course].score}</td>
                         <td className={admissionStyle}>{admissionChance}</td>
                     </tr>
