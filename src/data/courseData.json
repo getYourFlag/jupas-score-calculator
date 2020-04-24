@@ -3071,21 +3071,36 @@
         "school": "EDU",
         "name": "中國語文教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Chinese Language)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8222": {
         "code": "JS8222",
         "school": "EDU",
         "name": "英國語文教育榮譽學士 — 小學",
         "engName": "Bachelor of Education (Honours) (English Language) - Primary",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8234": {
         "code": "JS8234",
         "school": "EDU",
         "name": "小學教育榮譽學士 - 常識",
         "engName": "Bachelor of Education (Honours) (Primary) - General Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8246": {
         "code": "JS8246",
@@ -3097,14 +3112,24 @@
             "english": 3,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8325": {
         "code": "JS8325",
         "school": "EDU",
         "name": "體育教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Physical Education)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8361": {
         "code": "JS8361",
@@ -3116,21 +3141,37 @@
             "english": 3,
             "ls": 2,
             "maths": 2
-        }
+        },
+        "scores": {
+            "median": 19,
+            "lq": 18.5
+        },
+        "countedSubjects": [5]
     },
     "8371": {
         "code": "JS8371",
         "school": "EDU",
         "name": "企業、會計與財務概論教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Business, Accounting and Financial Studies)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8381": {
         "code": "JS8381",
         "school": "EDU",
         "name": "歷史教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (History)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年度學科JS8416，收生分數只供參考。"
     },
     "8391": {
         "code": "JS8391",
@@ -3142,21 +3183,36 @@
             "english": 3,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "median": 22,
+            "lq": 21.5
+        },
+        "countedSubjects": [5]
     },
     "8404": {
         "code": "JS8404",
         "school": "EDU",
         "name": "幼兒教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Early Childhood Education)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8428": {
         "code": "JS8428",
         "school": "EDU",
         "name": "地理教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Geography)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8430": {
         "code": "JS8430",
@@ -3168,84 +3224,145 @@
             "english": 3,
             "ls": 2,
             "maths": 2
-        }
+        },
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8507": {
         "code": "JS8507",
         "school": "EDU",
         "name": "幼兒教育高級文憑",
         "engName": "Higher Diploma in Early Childhood Education",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16.5
+        },
+        "countedSubjects": [5],
+        "specifications": { "highDiploma": true }
     },
     "8600": {
         "code": "JS8600",
         "school": "EDU",
         "name": "語文研究榮譽文學士 (中文主修)",
         "engName": "Bachelor of Arts (Honours) in Language Studies (Chinese Major)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8612": {
         "code": "JS8612",
         "school": "EDU",
         "name": "語文研究榮譽文學士 (英文主修)",
         "engName": "Bachelor of Arts (Honours) in Language Studies (English Major)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8624": {
         "code": "JS8624",
         "school": "EDU",
         "name": "全球及環境研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences (Honours) in Global and Environmental Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8636": {
         "code": "JS8636",
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士 (音樂)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture (Music)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8648": {
         "code": "JS8648",
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士 (視覺藝術)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture (Visual Arts)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 19,
+            "lq": 18.5
+        },
+        "countedSubjects": [5]
     },
     "8651": {
         "code": "JS8651",
         "school": "EDU",
         "name": "心理學榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences (Honours) in Psychology",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8663": {
         "code": "JS8663",
         "school": "EDU",
         "name": "特殊教育榮譽文學士",
         "engName": "Bachelor of Arts (Honours) in Special Education",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8801": {
         "code": "JS8801",
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士及音樂教育榮譽學士 (同期結業雙學位課程)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture and Bachelor of Education (Honours) (Music) Co-terminal Double Degree Programme",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "8813": {
         "code": "JS8813",
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士及視覺藝術教育榮譽學士 (同期結業雙學位課程)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture and Bachelor of Education (Honours) (Visual Arts) Co-terminal Double Degree Programme",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19.5
+        },
+        "countedSubjects": [5]
     },
     "8825": {
         "code": "JS8825",
         "school": "EDU",
         "name": "語文研究榮譽文學士及英文教育榮譽學士 (同期結業雙學位課程)",
         "engName": "Bachelor of Arts (Honours) in Language Studies and Bachelor of Education (Honours) (English Language) Co-terminal Double Degree Programme",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 20.5
+        },
+        "countedSubjects": [5]
     },
     "3014": {
         "code": "JS3014",
