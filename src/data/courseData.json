@@ -3111,7 +3111,8 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 3
+            "maths": 3,
+            "aMaths": 2
         },
         "scores": {
             "median": 21,
@@ -3140,7 +3141,8 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 2
+            "maths": 2,
+            "ICT Bio Chem Phy CSBC CSBP CSCP": 2
         },
         "scores": {
             "median": 19,
@@ -3171,6 +3173,10 @@
             "lq": 21.5
         },
         "countedSubjects": [5],
+        "weighting": {
+            "CHis": 1.2,
+            "His": 1.2
+        },
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年度學科JS8416，收生分數只供參考。"
     },
     "8391": {
@@ -3223,7 +3229,8 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 2
+            "maths": 2,
+            "Bio Chem Phy CSCP CSBC CSBP IS": 4
         },
         "scores": {
             "median": 20,
@@ -3254,7 +3261,10 @@
             "median": 20,
             "lq": 19.5
         },
-        "countedSubjects": [5]
+        "countedSubjects": [5],
+        "weighting": {
+            "ChinLit": 1.2
+        }
     },
     "8612": {
         "code": "JS8612",
@@ -3266,7 +3276,10 @@
             "median": 20,
             "lq": 19.5
         },
-        "countedSubjects": [5]
+        "countedSubjects": [5],
+        "weighting": {
+            "EngLit": 1.2
+        }
     },
     "8624": {
         "code": "JS8624",
@@ -3754,49 +3767,98 @@
         "school": "HKU",
         "name": "建築學文學士",
         "engName": "Bachelor of Arts in Architectural Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 41,
+            "median": 38,
+            "lq": 37
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6016": {
         "code": "JS6016",
         "school": "HKU",
         "name": "理學士(測量學)",
         "engName": "Bachelor of Science in Surveying",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 34,
+            "median": 32,
+            "lq": 32
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6028": {
         "code": "JS6028",
         "school": "HKU",
         "name": "園境學文學士",
         "engName": "Bachelor of Arts in Landscape Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 34,
+            "median": 32,
+            "lq": 31
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6030": {
         "code": "JS6030",
         "school": "HKU",
         "name": "文學士(建築文物保護)",
         "engName": "Bachelor of Arts in Conservation",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 28,
+            "median": 26,
+            "lq": 26
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6042": {
         "code": "JS6042",
         "school": "HKU",
         "name": "文學士(城市研究)",
         "engName": "Bachelor of Arts in Urban Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 30,
+            "median": 28,
+            "lq": 28
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6054": {
         "code": "JS6054",
         "school": "HKU",
         "name": "文學士",
         "engName": "Bachelor of Arts",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 28,
+            "median": 26,
+            "lq": 26
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6066": {
         "code": "JS6066",
         "school": "HKU",
         "name": "文學士及教育學士(語文教育) - 英文教育 (雙學位課程)",
         "engName": "Bachelor of Arts and Bachelor of Education in Language Education - English (double degree)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 28,
+            "median": 26,
+            "lq": 25
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6078": {
         "code": "JS6078",
@@ -3808,21 +3870,42 @@
             "english": 5,
             "ls": 3,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 46,
+            "median": 42,
+            "lq": 39
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6080": {
         "code": "JS6080",
         "school": "HKU",
         "name": "文學士及教育學士(語文教育) - 中文教育 (雙學位課程)",
         "engName": "Bachelor of Arts and Bachelor of Education in Language Education - Chinese (double degree)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 29,
+            "median": 28,
+            "lq": 28
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6092": {
         "code": "JS6092",
         "school": "HKU",
         "name": "教育學士(幼兒教育及特殊教育)",
         "engName": "Bachelor of Education in Early Childhood Education and Special Education",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 27,
+            "median": 23,
+            "lq": 23
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6107": {
         "code": "JS6107",
@@ -3835,7 +3918,14 @@
             "ls": 3,
             "maths": 3,
             "Bio Phy CSBP CSCP CSBC Chem IS": 3
-        }
+        },
+        "scores": {
+            "uq": 47,
+            "median": 44,
+            "lq": 42
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6119": {
         "code": "JS6119",
@@ -3848,7 +3938,14 @@
             "ls": 2,
             "maths": 2,
             "Bio Phy CSBP CSCP CSBC Chem IS": 3
-        }
+        },
+        "scores": {
+            "uq": 32,
+            "median": 29,
+            "lq": 28
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6157": {
         "code": "JS6157",
@@ -3861,14 +3958,28 @@
             "ls": 2,
             "maths": 2,
             "Bio CSBC CSBP": 3
-        }
+        },
+        "scores": {
+            "uq": 39,
+            "median": 38,
+            "lq": 35
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6195": {
         "code": "JS6195",
         "school": "HKU",
         "name": "教育學士及社會科學學士 (雙學位課程)",
         "engName": "Bachelor of Education and Bachelor of Social Sciences (double degree)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 32,
+            "median": 31,
+            "lq": 29
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6212": {
         "code": "JS6212",
@@ -3880,7 +3991,14 @@
             "english": 5,
             "ls": 2,
             "maths": 2
-        }
+        },
+        "scores": {
+            "uq": 34,
+            "median": 31,
+            "lq": 29
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6224": {
         "code": "JS6224",
@@ -3892,7 +4010,14 @@
             "english": 5,
             "ls": 2,
             "maths": 4
-        }
+        },
+        "scores": {
+            "uq": 38,
+            "median": 36,
+            "lq": 35
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6236": {
         "code": "JS6236",
@@ -3904,7 +4029,14 @@
             "english": 5,
             "ls": 2,
             "maths": 2
-        }
+        },
+        "scores": {
+            "uq": 41,
+            "median": 37,
+            "lq": 35
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6248": {
         "code": "JS6248",
@@ -3916,7 +4048,14 @@
             "english": 5,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 38,
+            "median": 36,
+            "lq": 35
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6250": {
         "code": "JS6250",
@@ -3928,7 +4067,14 @@
             "english": 5,
             "ls": 2,
             "maths": 2
-        }
+        },
+        "scores": {
+            "uq": 34,
+            "median": 31,
+            "lq": 29
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6406": {
         "code": "JS6406",
@@ -3940,7 +4086,14 @@
             "english": 5,
             "ls": 3,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 39,
+            "median": 38,
+            "lq": 38
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6456": {
         "code": "JS6456",
@@ -3953,14 +4106,28 @@
             "ls": 2,
             "maths": 2,
             "CSCP CSBC Chem": 3
-        }
+        },
+        "scores": {
+            "uq": 39,
+            "median": 38,
+            "lq": 37
+        },
+        "countedSubjects": [6],
+        "specifications": {}
     },
     "6468": {
         "code": "JS6468",
         "school": "HKU",
         "name": "護理學學士",
         "engName": "Bachelor of Nursing",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 26,
+            "median": 25,
+            "lq": 25
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6482": {
         "code": "JS6482",
@@ -3973,7 +4140,14 @@
             "ls": 2,
             "maths": 2,
             "Bio Phy CSBP CSCP CSBC Chem IS": 3
-        }
+        },
+        "scores": {
+            "uq": 29,
+            "median": 28,
+            "lq": 28
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6494": {
         "code": "JS6494",
@@ -3986,14 +4160,28 @@
             "ls": 2,
             "maths": 2,
             "CSCP CSBC Chem": 3
-        }
+        },
+        "scores": {
+            "uq": 35,
+            "median": 34,
+            "lq": 33
+        },
+        "countedSubjects": [6],
+        "specifications": {}
     },
     "6717": {
         "code": "JS6717",
         "school": "HKU",
         "name": "社會科學學士",
         "engName": "Bachelor of Social Sciences",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 31,
+            "median": 28,
+            "lq": 28
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6729": {
         "code": "JS6729",
@@ -4005,14 +4193,28 @@
             "english": 3,
             "ls": 2,
             "maths": 4
-        }
+        },
+        "scores": {
+            "uq": 36,
+            "median": 33,
+            "lq": 32
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6731": {
         "code": "JS6731",
         "school": "HKU",
         "name": "社會工作學學士",
         "engName": "Bachelor of Social Work",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 27,
+            "median": 26,
+            "lq": 26
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6767": {
         "code": "JS6767",
@@ -4024,7 +4226,14 @@
             "english": 4,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 35,
+            "median": 33,
+            "lq": 32
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6781": {
         "code": "JS6781",
@@ -4036,7 +4245,14 @@
             "english": 4,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 36,
+            "median": 34,
+            "lq": 33
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6793": {
         "code": "JS6793",
@@ -4049,7 +4265,14 @@
             "ls": 2,
             "maths": 3,
             "Bio Phy CSBP CSCP CSBC Chem IS ICT": 3
-        }
+        },
+        "scores": {
+            "uq": 35,
+            "median": 34,
+            "lq": 33
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6808": {
         "code": "JS6808",
@@ -4061,7 +4284,14 @@
             "english": 5,
             "ls": 2,
             "maths": 4
-        }
+        },
+        "scores": {
+            "uq": 45,
+            "median": 42,
+            "lq": 42
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6810": {
         "code": "JS6810",
@@ -4073,14 +4303,28 @@
             "english": 5,
             "ls": 3,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 44,
+            "median": 41,
+            "lq": 39
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6822": {
         "code": "JS6822",
         "school": "HKU",
         "name": "新聞學學士",
         "engName": "Bachelor of Journalism",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "uq": 32,
+            "median": 31,
+            "lq": 28
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6860": {
         "code": "JS6860",
@@ -4092,7 +4336,14 @@
             "english": 4,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 39,
+            "median": 38,
+            "lq": 38
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6884": {
         "code": "JS6884",
@@ -4104,7 +4355,14 @@
             "english": 4,
             "ls": 2,
             "maths": 3
-        }
+        },
+        "scores": {
+            "uq": 41,
+            "median": 39,
+            "lq": 38
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6896": {
         "code": "JS6896",
@@ -4116,7 +4374,14 @@
             "english": 5,
             "ls": 2,
             "maths": 4
-        }
+        },
+        "scores": {
+            "uq": 46,
+            "median": 46,
+            "lq": 46
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6901": {
         "code": "JS6901",
@@ -4129,7 +4394,14 @@
             "ls": 2,
             "maths": 2,
             "Bio Phy CSBP CSCP CSBC Chem IS": 3
-        }
+        },
+        "scores": {
+            "uq": 26,
+            "median": 25,
+            "lq": 23
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6925": {
         "code": "JS6925",
@@ -4142,7 +4414,14 @@
             "ls": 2,
             "maths": 3,
             "CSCP Phy CSBP": 3
-        }
+        },
+        "scores": {
+            "uq": 32,
+            "median": 31,
+            "lq": 29
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6949": {
         "code": "JS6949",
@@ -4155,7 +4434,14 @@
             "ls": 2,
             "maths": 2,
             "Bio CSBP CSCP CSBC Chem": 3
-        }
+        },
+        "scores": {
+            "uq": 35,
+            "median": 35,
+            "lq": 35
+        },
+        "countedSubjects": [6],
+        "specifications": { "bonusFor5": true }
     },
     "6951": {
         "code": "JS6951",
@@ -4168,7 +4454,14 @@
             "ls": 2,
             "maths": 3,
             "CSCP Phy CSBP": 3
-        }
+        },
+        "scores": {
+            "uq": 30,
+            "median": 28,
+            "lq": 25
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "6963": {
         "code": "JS6963",
@@ -4181,7 +4474,14 @@
             "ls": 2,
             "maths": 3,
             "CSCP Phy CSBP": 3
-        }
+        },
+        "scores": {
+            "uq": 28,
+            "median": 26,
+            "lq": 25
+        },
+        "countedSubjects": [5],
+        "specifications": { "bonusFor5": true }
     },
     "5101": {
         "code": "JS5101",
@@ -4192,8 +4492,15 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 2
-        }
+            "maths": 2,
+            "aMaths Phy Bio Chem CSBC CSBP CSCP": 3,
+            "aMaths Phy Bio Chem CSBC CSBP CSCP 2": 3
+        },
+        "scores": {
+            "median": 31,
+            "lq": 30
+        },
+        "countedSubjects": ["english", "maths", "aMaths Phy Bio Chem CSBC CSBP CSCP", "aMaths Phy Bio Chem CSBC CSBP CSCP", 1]
     },
     "5102": {
         "code": "JS5102",
@@ -4204,8 +4511,25 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 2
-        }
+            "maths": 2,
+            "aMaths Phy Bio Chem CSBC CSBP CSCP": 3
+        },
+        "scores": {
+            "median": 28,
+            "lq": 26
+        },
+        "countedSubjects": ["english", "maths", "aMaths Phy Bio Chem CSBC CSBP CSCP", 2],
+        "weighting": {
+            "aMaths": 2,
+            "Phy": 2,
+            "Bio": 1.5,
+            "Chem": 1.5,
+            "CSBC": 1.5,
+            "CSBP": 1.5,
+            "CSCP": 1.5
+        },
+        "specifications": { "weightingLimit": 2 },
+        "notice": "本學科為2019年聯招學科JS5100之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "5103": {
         "code": "JS5103",
@@ -4216,8 +4540,25 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 2
-        }
+            "maths": 2,
+            "aMaths Phy Bio Chem CSBC CSBP CSCP": 3
+        },
+        "scores": {
+            "median": 29,
+            "lq": 27
+        },
+        "countedSubjects": ["english", "maths", "aMaths Phy Bio Chem CSBC CSBP CSCP", 2],
+        "weighting": {
+            "Bio": 2,
+            "Chem": 2,
+            "aMaths": 1.5,
+            "Phy": 1.5,
+            "CSBC": 1.5,
+            "CSBP": 1.5,
+            "CSCP": 1.5
+        },
+        "specifications": { "weightingLimit": 2 },
+        "notice": "本學科為2019年聯招學科JS5100之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "5200": {
         "code": "JS5200",
@@ -4228,7 +4569,18 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 3
+            "maths": 3,
+            "Bio Chem Phy CSCP CSBC CSBP ICT": 3
+        },
+        "scores": {
+            "median": 38,
+            "lq": 35.5
+        },
+        "countedSubjects": ["english", "maths", "Bio Chem Phy CSBC CSCP CSBP:2/ICT:1", 2],
+        "weighting": {
+            "english": 2,
+            "maths": 2,
+            "aMaths": 1.5
         }
     },
     "5211": {
@@ -4240,7 +4592,18 @@
             "chinese": 3,
             "english": 3,
             "ls": 2,
-            "maths": 3
+            "maths": 3,
+            "Bio Chem Phy CSCP CSBC CSBP Design ICT": 3
+        },
+        "scores": {
+            "median": 44,
+            "lq": 40
+        },
+        "countedSubjects": ["english", "maths", "Bio Chem Phy CSBC CSCP CSBP Design:2/ICT:1", 2],
+        "weighting": {
+            "english": 2,
+            "maths": 2,
+            "aMaths": 1.5
         }
     },
     "5300": {
@@ -4253,6 +4616,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 36,
+            "lq": 35
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5311": {
@@ -4265,6 +4637,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 40,
+            "lq": 37
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5312": {
@@ -4277,6 +4658,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 45,
+            "lq": 44
+        },
+        "countedSubjects": ["english", "maths", "Chem Econ Phy aMaths:1.5", 3],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5313": {
@@ -4289,6 +4679,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 52,
+            "lq": 50
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5314": {
@@ -4301,6 +4700,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 38,
+            "lq": 37
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5315": {
@@ -4313,6 +4721,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 36,
+            "lq": 36
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5316": {
@@ -4325,6 +4742,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 37,
+            "lq": 36
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5317": {
@@ -4337,6 +4763,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 36,
+            "lq": 35
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5318": {
@@ -4349,6 +4784,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 37,
+            "lq": 37
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5331": {
@@ -4361,6 +4805,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 48.5,
+            "lq": 47.5
+        },
+        "countedSubjects": ["english", "maths", "Chem Econ Phy aMaths:1.5", 3],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5332": {
@@ -4373,6 +4826,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 53.5,
+            "lq": 51.5
+        },
+        "countedSubjects": ["english", "maths", "Chem Econ Phy aMaths:1.5", 3],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5411": {
@@ -4385,6 +4847,15 @@
             "english": 3,
             "ls": 2,
             "maths": 2
+        },
+        "scores": {
+            "median": 32,
+            "lq": 31.5
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "chinese": 1.5
         }
     },
     "5412": {
@@ -4397,6 +4868,16 @@
             "english": 3,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 37,
+            "lq": 35.5
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2,
+            "aMaths": 1.5
         }
     },
     "5811": {
@@ -4408,7 +4889,17 @@
             "chinese": 3,
             "english": 4,
             "ls": 2,
-            "maths": 3
+            "maths": 3,
+            "Bio Chem": 3
+        },
+        "scores": {
+            "median": 43.5,
+            "lq": 42
+        },
+        "countedSubjects": ["english", "maths", "Bio Chem:1.5", 3],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5812": {
@@ -4421,6 +4912,15 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 41,
+            "lq": 38
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5813": {
@@ -4432,7 +4932,17 @@
             "chinese": 3,
             "english": 4,
             "ls": 2,
-            "maths": 3
+            "maths": 3,
+            "aMaths Phy Bio Chem CSBC CSBP CSCP IS Econ": 3
+        },
+        "scores": {
+            "median": 46,
+            "lq": 43
+        },
+        "countedSubjects": ["english", "maths", "aMaths:2/Phy Bio Chem CSBC CSBP CSCP IS Econ:1.5", 3],
+        "weighting": {
+            "english": 2,
+            "maths": 2
         }
     },
     "5814": {
@@ -4445,6 +4955,16 @@
             "english": 4,
             "ls": 2,
             "maths": 3
+        },
+        "scores": {
+            "median": 45.5,
+            "lq": 44.5
+        },
+        "countedSubjects": ["english", "maths", 4],
+        "weighting": {
+            "english": 2,
+            "maths": 2,
+            "aMaths": 1.5
         }
     },
     "5901": {
@@ -4456,7 +4976,18 @@
             "chinese": 3,
             "english": 4,
             "ls": 2,
-            "maths": 3
+            "maths": 3,
+            "Bio Chem Phy CSCP CSBC CSBP ICT": 3
+        },
+        "scores": {
+            "median": 57.5,
+            "lq": 55
+        },
+        "countedSubjects": ["english", "maths", "Bio Chem Phy CSCP CSBC CSBP:2/ICT:1", 3],
+        "weighting": {
+            "english": 2,
+            "maths": 2,
+            "aMaths": 1.5
         }
     },
     "9001": {
@@ -4464,189 +4995,363 @@
         "school": "OU",
         "name": "心理學榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Psychology",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9003": {
         "code": "JS9003",
         "school": "OU",
         "name": "政治及公共行政榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Politics and Public Administration",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9004": {
         "code": "JS9004",
         "school": "OU",
         "name": "應用社會研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Applied Social Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9005": {
         "code": "JS9005",
         "school": "OU",
         "name": "全球與中國研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Global and China Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9006": {
         "code": "JS9006",
         "school": "OU",
         "name": "高齡社會與服務研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Ageing Society and Services Studies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 15,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9007": {
         "code": "JS9007",
         "school": "OU",
         "name": "經濟及公共政策分析榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Economic and Public Policy Analysis",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9008": {
         "code": "JS9008",
         "school": "OU",
         "name": "心理學與精神健康榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Psychology and Mental Health",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9011": {
         "code": "JS9011",
         "school": "OU",
         "name": "中文榮譽文學士",
         "engName": "Bachelor of Arts with Honours in Chinese",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 21
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {
+            "chinese": 2
+        }
     },
     "9013": {
         "code": "JS9013",
         "school": "OU",
         "name": "語言研究與翻譯榮譽文學士",
         "engName": "Bachelor of Arts with Honours in Language Studies and Translation",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 18
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {
+            "chinese": 1.5,
+            "english": 1.5
+        }
     },
     "9016": {
         "code": "JS9016",
         "school": "OU",
         "name": "創意廣告及媒體設計榮譽文學士",
         "engName": "Bachelor of Arts with Honours in Creative Advertising and Media Design",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21,
+            "lq": 19
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {
+            "chinese": 1.5,
+            "english": 1.5
+        }
     },
     "9019": {
         "code": "JS9019",
         "school": "OU",
         "name": "英語及文化榮譽文學士",
         "engName": "Bachelor of Arts with Honours in English Language and Culture",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice":"本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9017，收生分數只供參考。"
     },
     "9220": {
         "code": "JS9220",
         "school": "OU",
         "name": "專業會計榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Professional Accounting",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9222": {
         "code": "JS9222",
         "school": "OU",
         "name": "會計及稅務學榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Accounting and Taxation",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 18
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9230": {
         "code": "JS9230",
         "school": "OU",
         "name": "商業管理學榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Business Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 14
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9240": {
         "code": "JS9240",
         "school": "OU",
         "name": "環球商業及市場學榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Global Business and Marketing",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9250": {
         "code": "JS9250",
         "school": "OU",
         "name": "企業管治榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Corporate Governance",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 15,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9261": {
         "code": "JS9261",
         "school": "OU",
         "name": "數碼商業榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Digital Business",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9272": {
         "code": "JS9272",
         "school": "OU",
         "name": "財務及風險管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Finance and Risk Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9276": {
         "code": "JS9276",
         "school": "OU",
         "name": "房地產及設施管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Real Estate and Facilities Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9280": {
         "code": "JS9280",
         "school": "OU",
         "name": "應用心理學榮譽學士，商業管理榮譽學士",
         "engName": "Bachelor of Applied Psychology with Honours, Bachelor of Business Management with Honours",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9291": {
         "code": "JS9291",
         "school": "OU",
         "name": "酒店及可持續旅遊管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Hotel and Sustainable Tourism Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 15,
+            "lq": 14
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9294": {
         "code": "JS9294",
         "school": "OU",
         "name": "運動及電競運動管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Sports and eSports Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9530": {
         "code": "JS9530",
         "school": "OU",
         "name": "英語教學榮譽教育學士及英語研究榮譽學士",
         "engName": "Bachelor of Education with Honours in English Language Teaching and Bachelor of English Language Studies with Honours",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 20
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {"english": 2}
     },
     "9540": {
         "code": "JS9540",
         "school": "OU",
         "name": "英語研究榮譽學士",
         "engName": "Bachelor of English Language Studies with Honours",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 19,
+            "lq": 19
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": { "english": 2 }
     },
     "9550": {
         "code": "JS9550",
         "school": "OU",
         "name": "語言研究榮譽學士(應用中國語言)",
         "engName": "Bachelor of Language Studies with Honours (Applied Chinese Language Studies)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 23
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": { "chinese": 2 }
     },
     "9560": {
         "code": "JS9560",
         "school": "OU",
         "name": "教育榮譽學士（中國語文教學）及語言研究榮譽學士（應用中國語言）",
         "engName": "Bachelor of Education with Honours (Chinese Language Teaching) and Bachelor of Language Studies with Honours (Applied Chinese Language Studies)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": { "chinese": 2 }
     },
     "9570": {
         "code": "JS9570",
         "school": "OU",
-        "name": "語言研究(雙語傳意)榮譽學士， 國際商業榮譽學士",
+        "name": "語言研究(雙語傳意)榮譽學士，國際商業榮譽學士",
         "engName": "Bachelor of Language Studies with Honours (Bilingual Communication), Bachelor of Global Business with Honours",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9580": {
         "code": "JS9580",
@@ -4658,42 +5363,82 @@
             "english": 3,
             "ls": 2,
             "maths": 2
-        }
+        },
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9720": {
         "code": "JS9720",
         "school": "OU",
         "name": "電子及電腦工程學榮譽工學士",
         "engName": "Bachelor of Engineering with Honours in Electronic and Computer Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {}
     },
     "9731": {
         "code": "JS9731",
         "school": "OU",
         "name": "環境科學與綠色管理榮譽理學士",
         "engName": "Bachelor of Science with Honours in Environmental Science and Green Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9768，收生分數只供參考。"
     },
     "9732": {
         "code": "JS9732",
         "school": "OU",
         "name": "生命科學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Life Sciences",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9768，收生分數只供參考。"
     },
     "9769": {
         "code": "JS9769",
         "school": "OU",
         "name": "食品測試科學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Food Testing Science",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9768，收生分數只供參考。"
     },
     "9780": {
         "code": "JS9780",
         "school": "OU",
         "name": "數據科學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Data Science",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {},
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9720，收生分數只供參考。"
     },
     "9790": {
         "code": "JS9790",

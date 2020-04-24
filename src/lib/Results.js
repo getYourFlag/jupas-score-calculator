@@ -59,7 +59,7 @@ class Result {
 
         if (specifications.weightingLimit) {
             let limit = specifications.weightingLimit;
-            let weightedSubjects = Object.keys(this.score).filter(key => weighting.indexOf(key) !== -1);
+            let weightedSubjects = Object.keys(this.score).filter(key => weighting[key] !== undefined);
 
             if (weightedSubjects.length > limit) {
                 let highestWeightedSubjects = [];
@@ -139,16 +139,17 @@ class Result {
         return bestSubjectScore;
     }
 
-    getBestSubjectWithCustomWeighting(weighted = [], ratio = 1, getSubjectName = false, useState = true) {
+    getBestSubjectWithCustomWeighting(weighting, getSubjectName = false, useState = true) {
         const scores = Object.assign({}, this.rawScore);
         let bestSubjectName = "";
         let bestSubjectScore = 0;
         let excludes = useState ? this.calculatedSubjects : [];
+        let weightedSubjects = Object.keys(weighting);
 
         for (let subject in scores) {
             let subjScore = scores[subject];
             if (excludes.indexOf(subject) !== -1) continue;
-            if (weighted.indexOf(subject) !== -1) subjScore *= ratio;
+            if (weightedSubjects.indexOf(subject) !== -1) subjScore *= weighting[subject];
             if (subjScore > bestSubjectScore) {
                 bestSubjectScore = subjScore;
                 bestSubjectName = subject;
@@ -167,13 +168,13 @@ class Result {
     getBestSubjects(count = 1, include = null, exclude = null, rawScore = false, useState = true) {
         let totalScore = 0;
         for (let i = 0; i < count; i++) {
-            totalScore += this.getBestSubject(include, exclude, rawScore, useState);
+            totalScore += this.getBestSubject(include, exclude, rawScore, false, useState);
         }
         return totalScore;
     }
 
     getBestSubjectsStateless(count = 1, include = null, exclude = null, rawScore = false) {
-        return this.getBestSubjectsStateless(count, include, exclude, rawScore, false);
+        return this.getBestSubjects(count, include, exclude, rawScore, false);
     }
 
     getBestElective(include = null, exclude = null, rawScore = false, getSubjectName = false, useState = true) {

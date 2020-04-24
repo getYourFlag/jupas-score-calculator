@@ -6,6 +6,7 @@ function calculate(score, isRetaker = false) {
     let calculateResult = {};
     for (let courseCode in courseList) {
         let course = courseList[courseCode];
+        if (!course.scores) continue;
 
         let specifications = course.specifications || {};
         specifications.otherLangRatio = otherLangRatio[course.school];
@@ -47,10 +48,8 @@ function calculateScore(result, course) {
 
         } else if (subject.indexOf(':') !== -1) {
 
-            let [targetSubjects, ratio] = subject.split(":");
-            ratio = parseFloat(ratio);
-            targetSubjects = targetSubjects.split(" ");
-            resultScore += result.getBestSubjectWithCustomWeighting(targetSubjects, ratio, false);
+            const weightObject = parseWeightedSubjectString(subject);
+            resultScore += result.getBestSubjectWithCustomWeighting(weightObject, false);
 
         } else {
 
@@ -66,12 +65,12 @@ function calculateScore(result, course) {
 function giveChance(admissionScore, course) {
     if (course.specifications && course.specifications.minimumScore && admissionScore < course.specifications.minimumScore) return -1;
 
-    let median = course.score.median;
-    let lq = course.score.lq;
+    let median = course.scores.median;
+    let lq = course.scores.lq;
     let diff = median - lq; // Difference between LQ & Median for estimation.
     if (diff === 0) diff = Math.round(median / 20);
-    let uq = course.score.uq || median + diff;
-    let min = course.score.min || lq - diff;
+    let uq = course.scores.uq || median + diff;
+    let min = course.scores.min || lq - diff;
     if (admissionScore >= median) {
         if (admissionScore > uq) return 4;
         return 3;
@@ -81,6 +80,24 @@ function giveChance(admissionScore, course) {
     } else {
         return 0;
     }
+}
+
+function parseWeightedSubjectString(subjects) {
+    if (subjects.indexOf("/") !== -1) {
+        const subCategories = subjects.split("/");
+        let weighting = {}
+        for (let category of subCategories) {
+            weighting = Object.assign(weighting, parseWeightedSubjectString(category));
+        }
+        return weighting;
+    }
+
+    const weighting = {};
+    let [targetSubjects, ratio] = subjects.split(":");
+    ratio = parseFloat(ratio);
+
+    targetSubjects.forEach(subject => weighting[subject] = ratio);
+    return weighting;
 }
 
 export default calculate;
