@@ -3382,70 +3382,130 @@
         "school": "PolyU",
         "name": "應用物理學高級文憑",
         "engName": "HD in Applied Physics",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 16,
+            "lq": 15
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3026": {
         "code": "JS3026",
         "school": "PolyU",
         "name": "屋宇設備工程學高級文憑",
         "engName": "HD in Building Services Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3038": {
         "code": "JS3038",
         "school": "PolyU",
         "name": "建築科技及管理學高級文憑(工程)",
         "engName": "HD in Building Technology & Management (Engineering)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3040": {
         "code": "JS3040",
         "school": "PolyU",
         "name": "化學科技高級文憑",
         "engName": "HD in Chemical Technology",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3052": {
         "code": "JS3052",
         "school": "PolyU",
         "name": "土木工程學高級文憑",
         "engName": "HD in Civil Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 19,
+            "lq": 18
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3064": {
         "code": "JS3064",
         "school": "PolyU",
         "name": "電機工程學高級文憑",
         "engName": "HD in Electrical Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3076": {
         "code": "JS3076",
         "school": "PolyU",
         "name": "電子及資訊工程學高級文憑",
         "engName": "HD in Electronic & Information Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3105": {
         "code": "JS3105",
         "school": "PolyU",
         "name": "土地測量及地理資訊學高級文憑",
         "engName": "HD in Land Surveying and Geo-Informatics",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3117": {
         "code": "JS3117",
         "school": "PolyU",
         "name": "工業及系統工程學高級文憑",
         "engName": "HD in Industrial & Systems Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 15,
+            "lq": 15
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3284": {
         "code": "JS3284",
         "school": "PolyU",
         "name": "建築科技及管理學高級文憑(測量)",
         "engName": "HD in Building Technology & Management (Surveying)",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "specifications": { "highDiploma": true, "bonusFor5": true }
     },
     "3337": {
         "code": "JS3337",
