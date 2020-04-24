@@ -57,7 +57,6 @@ class Results extends React.Component {
         }
 
         let startIndex = (this.state.pageNum - 1) * 15;
-        
         let uniButtons = Object.keys(uniNames).map(uni => {
             return (
                 <button value={uni} onClick={this.changeUniHandler} key={uni}>
