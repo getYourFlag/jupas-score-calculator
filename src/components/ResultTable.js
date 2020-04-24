@@ -45,7 +45,7 @@ const ResultTable = props => {
 
     return (
         <Fragment>
-            <div id="tableTop">
+            <div>
                 <h3>{props.uniName} 課程入學機率</h3>
                 <table className="resultTable">
                     <thead>

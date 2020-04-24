@@ -94,6 +94,7 @@ function parseWeightedSubjectString(subjects) {
 
     const weighting = {};
     let [targetSubjects, ratio] = subjects.split(":");
+    targetSubjects = targetSubjects.split(" ");
     ratio = parseFloat(ratio);
 
     targetSubjects.forEach(subject => weighting[subject] = ratio);

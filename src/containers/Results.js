@@ -75,6 +75,7 @@ class Results extends React.Component {
                 <div className="uniSelect" id="uniSelect">
                     {uniButtons}
                 </div>
+                <div id="tableTop" />
                 {this.state.currentUni ? 
                     <ResultTable 
                         results={currentUniResults}

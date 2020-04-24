@@ -2055,7 +2055,7 @@
             "median": 28,
             "lq": 28
         },
-        "countedSubjects": ["english", "maths aMaths"],
+        "countedSubjects": ["english", "maths aMaths", 3],
         "weighting": {}
     },
     "4240": {
@@ -3512,315 +3512,632 @@
         "school": "PolyU",
         "name": "精神健康護理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Mental Health Nursing",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 27,
+            "lq": 25.5
+        },
+        "countedSubjects": ["main", 2],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3349": {
         "code": "JS3349",
         "school": "PolyU",
         "name": "食品科技與食物安全(榮譽)理學士學位",
         "engName": "BSc (Hons) in Food Safety and Technology",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 20.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3351": {
         "code": "JS3351",
         "school": "PolyU",
         "name": "運輸系統工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Transportation Systems Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22.5,
+            "lq": 19
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3375": {
         "code": "JS3375",
         "school": "PolyU",
         "name": "環境工程與可持續發展學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Environmental Engineering & Sustainable Development",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20.5,
+            "lq": 19
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3387": {
         "code": "JS3387",
         "school": "PolyU",
         "name": "土地測量及地理資訊學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Land Surveying and Geo-Informatics",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21.5,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3442": {
         "code": "JS3442",
         "school": "PolyU",
         "name": "物業管理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Property Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3466": {
         "code": "JS3466",
         "school": "PolyU",
         "name": "會計及金融(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Accounting & Finance",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 24.5,
+            "lq": 23
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3478": {
         "code": "JS3478",
         "school": "PolyU",
         "name": "醫療化驗科學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Medical Laboratory Science",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 36,
+            "lq": 36
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3492": {
         "code": "JS3492",
         "school": "PolyU",
         "name": "服裝及紡織(榮譽)文學士學位組合課程",
         "engName": "BA (Hons) Scheme in Fashion and Textiles",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3507": {
         "code": "JS3507",
         "school": "PolyU",
         "name": "航空工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Aviation Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 24.5,
+            "lq": 22.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3519": {
         "code": "JS3519",
         "school": "PolyU",
         "name": "互聯網及多媒體科技(榮譽)理學士學位",
         "engName": "BSc (Hons) in Internet & Multimedia Technologies",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 19
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3533": {
         "code": "JS3533",
         "school": "PolyU",
         "name": "全球供應鏈管理(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Global Supply Chain Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3557": {
         "code": "JS3557",
         "school": "PolyU",
         "name": "產品及工業工程(榮譽)工學士學位組合課程",
         "engName": "BEng (Hons) Scheme in Product and Industrial Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 19,
+            "lq": 19
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3569": {
         "code": "JS3569",
         "school": "PolyU",
         "name": "設計學(榮譽)文學士學位組合課程",
         "engName": "BA (Hons) Scheme in Design",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21.5,
+            "lq": 19.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3571": {
         "code": "JS3571",
         "school": "PolyU",
         "name": "物流及企業工程(榮譽)理學士學位組合課程",
         "engName": "BSc (Hons) Scheme in Logistics and Enterprise Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20.5,
+            "lq": 20.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3583": {
         "code": "JS3583",
         "school": "PolyU",
         "name": "管理學(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21.5,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3595": {
         "code": "JS3595",
         "school": "PolyU",
         "name": "金融服務(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Financial Services",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3600": {
         "code": "JS3600",
         "school": "PolyU",
         "name": "生物醫學工程(榮譽)理學士學位",
         "engName": "BSc (Hons) in Biomedical Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 24,
+            "lq": 23
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3612": {
         "code": "JS3612",
         "school": "PolyU",
         "name": "放射學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Radiography",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 37.5,
+            "lq": 34.5
+        },
+        "countedSubjects": [6],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3624": {
         "code": "JS3624",
         "school": "PolyU",
         "name": "職業治療學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Occupational Therapy",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 36,
+            "lq": 34.5
+        },
+        "countedSubjects": [6],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3636": {
         "code": "JS3636",
         "school": "PolyU",
         "name": "物理治療學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Physiotherapy",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 39,
+            "lq": 36
+        },
+        "countedSubjects": [6],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3648": {
         "code": "JS3648",
         "school": "PolyU",
         "name": "護理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Nursing",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 28.5,
+            "lq": 27
+        },
+        "countedSubjects": ["main", 2],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3650": {
         "code": "JS3650",
         "school": "PolyU",
         "name": "眼科視光學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Optometry",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 34.5,
+            "lq": 33
+        },
+        "countedSubjects": [6],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3662": {
         "code": "JS3662",
         "school": "PolyU",
         "name": "社會工作(榮譽)文學士學位",
         "engName": "BA (Hons) in Social Work",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 28.5,
+            "lq": 27.5
+        },
+        "countedSubjects": ["main", 2],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3674": {
         "code": "JS3674",
         "school": "PolyU",
         "name": "國際航運及物流管理(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in International Shipping & Transport Logistics",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3703": {
         "code": "JS3703",
         "school": "PolyU",
         "name": "電子及資訊工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Electronic & Information Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3715": {
         "code": "JS3715",
         "school": "PolyU",
         "name": "電機工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Electrical Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3739": {
         "code": "JS3739",
         "school": "PolyU",
         "name": "土木工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Civil Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3741": {
         "code": "JS3741",
         "school": "PolyU",
         "name": "機械工程(榮譽)工學士學位組合課程",
         "engName": "BEng (Hons) Scheme in Mechanical Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20.5,
+            "lq": 19.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3753": {
         "code": "JS3753",
         "school": "PolyU",
         "name": "屋宇設備工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Building Services Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22.5,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3765": {
         "code": "JS3765",
         "school": "PolyU",
         "name": "社會政策及社會創業(榮譽)文學士學位",
         "engName": "BA (Hons) in Social Policy & Social Entrepreneurship",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 25.5,
+            "lq": 22.5
+        },
+        "countedSubjects": ["main", 2],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3777": {
         "code": "JS3777",
         "school": "PolyU",
         "name": "結構及消防安全工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Structural and Fire Safety Engineering",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 19.5,
+            "lq": 19.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3789": {
         "code": "JS3789",
         "school": "PolyU",
         "name": "地產及建設測量學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Surveying",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 29,
+            "lq": 28.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3791": {
         "code": "JS3791",
         "school": "PolyU",
         "name": "建築工程及管理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Building Engineering and Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3806": {
         "code": "JS3806",
         "school": "PolyU",
         "name": "投資科學及金融分析(榮譽)理學士學位",
         "engName": "BSc (Hons) in Investment Science and Finance Analytics",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 22,
+            "lq": 22
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3818": {
         "code": "JS3818",
         "school": "PolyU",
         "name": "語言學及翻譯學(榮譽)文學士學位",
         "engName": "BA (Hons) in Linguistics and Translation",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true },
+        "notice": "本學科為2019年聯招學科JS3480之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "3820": {
         "code": "JS3820",
         "school": "PolyU",
         "name": "旅遊業及會展管理(榮譽)理學士學位",
         "engName": "BSc (Hons) in Tourism & Events Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21.5,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3832": {
         "code": "JS3832",
         "school": "PolyU",
         "name": "專業英文(榮譽)文學士學位",
         "engName": "BA (Hons) in English Studies for the Professions",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 21.5
+        },
+        "countedSubjects": ["chinese", "english", 3],
+        "weighting": {},
+        "specifications": { "bonusFor5": true },
+        "notice": "本學科為2019年聯招學科JS3480之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "3868": {
         "code": "JS3868",
         "school": "PolyU",
         "name": "電子計算(榮譽)理學士學位組合課程",
         "engName": "BSc (Hons) Scheme in Computing",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 230,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3882": {
         "code": "JS3882",
         "school": "PolyU",
         "name": "酒店業管理(榮譽)理學士學位",
         "engName": "BSc (Hons) in Hotel Management",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23,
+            "lq": 23
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3894": {
         "code": "JS3894",
         "school": "PolyU",
         "name": "市場學(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Marketing",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21.5,
+            "lq": 20.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3911": {
         "code": "JS3911",
         "school": "PolyU",
         "name": "會計學(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Accountancy",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 23.5,
+            "lq": 21.5
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3923": {
         "code": "JS3923",
         "school": "PolyU",
         "name": "應用生物兼生物科技(榮譽)理學士學位",
         "engName": "BSc (Hons) in Applied Biology with Biotechnology",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 21.5,
+            "lq": 20
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3985": {
         "code": "JS3985",
         "school": "PolyU",
         "name": "工程物理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Engineering Physics",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20,
+            "lq": 19
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "3997": {
         "code": "JS3997",
         "school": "PolyU",
         "name": "化學科技(榮譽)理學士學位",
         "engName": "BSc (Hons) in Chemical Technology",
-        "requirements": {}
+        "requirements": {},
+        "scores": {
+            "median": 20.5,
+            "lq": 19
+        },
+        "countedSubjects": [5],
+        "weighting": {},
+        "specifications": { "bonusFor5": true }
     },
     "6004": {
         "code": "JS6004",
