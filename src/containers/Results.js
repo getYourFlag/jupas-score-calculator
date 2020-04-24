@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 
 import Backdrop from "../components/UI/Backdrop";
 import CourseNote from "../components/UI/courseNote";
-import ResultList from "../components/ResultList";
+import ResultTable from "../components/ResultTable";
 
 import courseList from "../data/courseData.json";
 import { uniNames } from "../data/university.json";
@@ -77,14 +77,14 @@ class Results extends React.Component {
                     {uniButtons}
                 </div>
                 {this.state.currentUni ? 
-                    <ResultList 
+                    <ResultTable 
                         results={currentUniResults}
                         index={startIndex}
                         pageNum={this.state.pageNum}
                         lastPageHandler={this.lastPageHandler}
-                        nextPage={this.nextPageHandler}
+                        nextPageHandler={this.nextPageHandler}
                         openModal={this.openModalToggler}
-                        uniName={this.state.currentUni}
+                        uniName={uniNames[this.state.currentUni]}
                     /> : (<h3>請點選院校以查看該院校課程的入學機率</h3>) }
             </div>
         )

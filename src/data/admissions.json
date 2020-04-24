@@ -1,0 +1,16 @@
+{
+    "admissionStyles": {
+        "4": ["非常高", "admVeryHigh"],
+        "3": ["頗高", "admHigh"],
+        "2": ["中等", "admMid"],
+        "1": ["偏低", "admLow"],
+        "0": ["難以入讀", "admNo"],
+        "-1": ["不符合條件", "admImpossible"]
+    },
+    "includedSubjects": {
+        "main2": "4C+2X",
+        "main1": "4C+1X",
+        "5": "Best 5",
+        "6": "Best 6"
+    }
+}
