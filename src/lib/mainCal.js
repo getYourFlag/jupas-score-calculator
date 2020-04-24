@@ -20,7 +20,7 @@ function calculate(score, isRetaker = false) {
 function calculateChance(result, course, isRetaker = false) {
     let [electiveCount, electiveGrade] = basicElectiveRequirements[course.school];
 
-    let eligibility = result.checkProgramRequirements(course.requirement, electiveCount, electiveGrade); // Score object will be mutated.
+    let eligibility = result.checkProgramRequirements(course.requirements, electiveCount, electiveGrade); // Score object will be mutated.
     if (!eligibility) return {chance: -1, score: "--"};
 
     let admissionScore = calculateScore(result, course);
@@ -36,16 +36,27 @@ function calculateScore(result, course) {
     let resultScore = 0;
 
     for (let subject of course.countedSubjects) {
+
         if (typeof subject === 'number') {
+
             resultScore += result.getBestSubjects(subject);
+
         } else if (subject === 'main') {
+
             resultScore += result.getMain();
+
         } else if (subject.indexOf(':') !== -1) {
-            let [ratio, countSubjects] = subject.split(":");
-            resultScore += result.getBestSubject(countSubjects.split(" "), null) * ratio;
+
+            let [targetSubjects, ratio] = subject.split(":");
+            ratio = parseFloat(ratio);
+            targetSubjects = targetSubjects.split(" ");
+            resultScore += result.getBestSubjectWithCustomWeighting(targetSubjects, ratio, false);
+
         } else {
+
             let includedSubjects = subject.split(" ");
             resultScore += result.getBestSubject(includedSubjects, null);
+
         }
     }
 
@@ -53,15 +64,19 @@ function calculateScore(result, course) {
 }
 
 function giveChance(admissionScore, course) {
-    let diff = course.median - course.lq; // Difference between LQ & Median for estimation.
-    if (diff === 0) diff = Math.round(course.median / 20);
-    let uq = course.uq || course.median + diff;
-    let min = course.min || course.lq - diff;
-    if (admissionScore >= course.median) {
+    if (course.specifications && course.specifications.minimumScore && admissionScore < course.specifications.minimumScore) return -1;
+
+    let median = course.score.median;
+    let lq = course.score.lq;
+    let diff = median - lq; // Difference between LQ & Median for estimation.
+    if (diff === 0) diff = Math.round(median / 20);
+    let uq = course.score.uq || median + diff;
+    let min = course.score.min || lq - diff;
+    if (admissionScore >= median) {
         if (admissionScore > uq) return 4;
         return 3;
     } else if (admissionScore >= min) {
-        if (admissionScore >= course.lq) return 2;
+        if (admissionScore >= lq) return 2;
         return 1;
     } else {
         return 0;
