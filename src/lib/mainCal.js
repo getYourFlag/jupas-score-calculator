@@ -9,7 +9,7 @@ function calculate(score, isRetaker = false) {
         if (!course.scores) continue;
 
         let specifications = course.specifications || {};
-        specifications.otherLangRatio = otherLangRatio[course.school];
+        specifications.otherLangRatio = otherLangRatio[course.school] || otherLangRatio.default;
         let weighting = course.weighting || {};
 
         let result = new Result(score, weighting, specifications);
@@ -19,9 +19,10 @@ function calculate(score, isRetaker = false) {
 }
 
 function calculateChance(result, course, isRetaker = false) {
-    let [electiveCount, electiveGrade] = basicElectiveRequirements[course.school];
+    let [electiveCount, electiveGrade] = basicElectiveRequirements[course.school] || [2, 1];
+    const requirements = course.requirements || {};
 
-    let eligibility = result.checkProgramRequirements(course.requirements, electiveCount, electiveGrade); // Score object will be mutated.
+    let eligibility = result.checkProgramRequirements(requirements, electiveCount, electiveGrade);
     if (!eligibility) return {chance: -1, score: "--"};
 
     let admissionScore = calculateScore(result, course);
@@ -54,7 +55,7 @@ function calculateScore(result, course) {
         } else {
 
             let includedSubjects = subject.split(" ");
-            resultScore += result.getBestSubject(includedSubjects, null);
+            resultScore += result.getBestSubject(includedSubjects);
 
         }
     }

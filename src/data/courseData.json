@@ -251,7 +251,6 @@
         "school": "CityU",
         "name": "創意媒體學院 [選項: 文學士(創意媒體)、理學士(創意媒體)、文理學士(新媒體)]",
         "engName": "School of Creative Media (options: BA Creative Media, BSc Creative Media, BAS New Media)",
-        "requirements": {},
         "scores": {
             "median": 30,
             "lq": 28
@@ -266,7 +265,6 @@
         "school": "CityU",
         "name": "文學士(創意媒體)",
         "engName": "BA Creative Media",
-        "requirements": {},
         "scores": {
             "median": 31,
             "lq": 30
@@ -281,7 +279,6 @@
         "school": "CityU",
         "name": "理學士(創意媒體)",
         "engName": "BSc Creative Media",
-        "requirements": {},
         "scores": {
             "median": 29,
             "lq": 29
@@ -297,7 +294,6 @@
         "school": "CityU",
         "name": "文理學士(新媒體)",
         "engName": "BAS New Media",
-        "requirements": {},
         "scores": {
             "median": 27,
             "lq": 27
@@ -414,7 +410,6 @@
         "school": "CityU",
         "name": "建築科技學部 [選項: 理學副學士(屋宇裝備工程學)、理學副學士(建造工程及管理學)、理學副學士(測量學)]",
         "engName": "Division of Building Science and Technology (options: ASc Building Services Engineering, ASc Construction Engineering and Management, ASc Surveying)",
-        "requirements": {},
         "specifications": {
             "highDiploma": true
         },
@@ -432,7 +427,6 @@
         "school": "CityU",
         "name": "理學副學士(建築學)",
         "engName": "ASc Architectural Studies",
-        "requirements": {},
         "specifications": {
             "highDiploma": true
         },
@@ -450,7 +444,6 @@
         "school": "CityU",
         "name": "社會科學學士(亞洲及國際研究)",
         "engName": "BSocSc Asian and International Studies",
-        "requirements": {},
         "scores": {
             "median": 31.5,
             "lq": 31
@@ -466,7 +459,6 @@
         "school": "CityU",
         "name": "文學士(中文及歷史)",
         "engName": "BA Chinese and History",
-        "requirements": {},
         "scores": {
             "median": 39.5,
             "lq": 39
@@ -487,7 +479,6 @@
         "school": "CityU",
         "name": "文學士(英語語言)",
         "engName": "BA English",
-        "requirements": {},
         "scores": {
             "median": 35,
             "lq": 34.5
@@ -504,7 +495,6 @@
         "school": "CityU",
         "name": "翻譯及語言學系 [選項: 文學士(語言學及語言應用)、文學士(翻譯及傳譯)]",
         "engName": "Department of Linguistics and Translation (options: BA Linguistics and Language Applications, BA Translation and Interpretation)",
-        "requirements": {},
         "scores": {
             "median": 32.5,
             "lq": 32
@@ -520,7 +510,6 @@
         "school": "CityU",
         "name": "媒體與傳播系 [選項: 文學士(數碼電視與廣播)、文學士(媒體與傳播)]",
         "engName": "Department of Media and Communication (options: BA Digital Television and Broadcasting, BA Media and Communication)",
-        "requirements": {},
         "scores": {
             "median": 23.5,
             "lq": 23.25
@@ -536,7 +525,6 @@
         "school": "CityU",
         "name": "社會科學學士(公共政策與政治)",
         "engName": "BSocSc Public Policy and Politics",
-        "requirements": {},
         "scores": {
             "median": 31,
             "lq": 30.5
@@ -552,7 +540,6 @@
         "school": "CityU",
         "name": "社會及行為科學系 [選項: 社會科學學士(犯罪學及社會學)、社會科學學士(心理學)、社會科學學士(社會工作)]",
         "engName": "Department of Social and Behavioural Sciences (options: BSocSc Criminology and Sociology, BSocSc Psychology, BSocSc Social Work)",
-        "requirements": {},
         "scores": {
             "median": 30,
             "lq": 29
@@ -567,7 +554,6 @@
         "school": "CityU",
         "name": "社會科學學士(犯罪學及社會學)",
         "engName": "BSocSc Criminology and Sociology",
-        "requirements": {},
         "scores": {
             "median": 30,
             "lq": 29
@@ -583,7 +569,6 @@
         "school": "CityU",
         "name": "社會科學學士(心理學)",
         "engName": "BSocSc Psychology",
-        "requirements": {},
         "scores": {
             "median": 30,
             "lq": 29
@@ -599,7 +584,6 @@
         "school": "CityU",
         "name": "社會科學學士(社會工作)]",
         "engName": "BSocSc Social Work",
-        "requirements": {},
         "scores": {
             "median": 31,
             "lq": 30.5
@@ -929,8 +913,7 @@
             "median": 34,
             "lq": 33
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "1805": {
         "code": "JS1805",
@@ -1038,26 +1021,22 @@
         "school": "BU",
         "name": "文學士",
         "engName": "Bachelor of Arts",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "2021": {
         "code": "JS2021",
         "school": "BU",
         "name": "中國語言文學文學士",
         "engName": "Bachelor of Arts in Chinese Language and Literature",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2019年聯招學科JS2020之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2022": {
@@ -1065,13 +1044,11 @@
         "school": "BU",
         "name": "創意及專業寫作文學士",
         "engName": "Bachelor of Arts in Creative and Professional Writing",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2019年聯招學科JS2020之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2023": {
@@ -1079,13 +1056,11 @@
         "school": "BU",
         "name": "英國語言文學文學士",
         "engName": "Bachelor of Arts in English Language and Literature",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2019年聯招學科JS2020之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2024": {
@@ -1093,13 +1068,11 @@
         "school": "BU",
         "name": "人文學文學士",
         "engName": "Bachelor of Arts in Humanities",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2019年聯招學科JS2020之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2025": {
@@ -1107,13 +1080,11 @@
         "school": "BU",
         "name": "宗教、哲學及倫理文學士",
         "engName": "Bachelor of Arts in Religion, Philosophy and Ethics",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2019年聯招學科JS2020之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2026": {
@@ -1121,13 +1092,11 @@
         "school": "BU",
         "name": "翻譯學文學士",
         "engName": "Bachelor of Arts in Translation",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 24
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2019年聯招學科JS2020之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2030": {
@@ -1135,20 +1104,17 @@
         "school": "BU",
         "name": "音樂文學士",
         "engName": "Bachelor of Arts in Music",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 25
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "2040": {
         "code": "JS2040",
         "school": "BU",
         "name": "英國語言文學及英語教學 (雙學位課程)",
         "engName": "English Language & Literature and English Language Teaching (Double Degree)",
-        "requirements": {},
         "scores": {
             "median": 36.5,
             "lq": 36
@@ -1168,78 +1134,66 @@
         "school": "BU",
         "name": "創意產業音樂學士",
         "engName": "Bachelor of Music in Creative Industries",
-        "requirements": {},
         "scores": {
             "median": 27,
             "lq": 27
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "2110": {
         "code": "JS2110",
         "school": "BU",
         "name": "工商管理學士 - 會計學專修",
         "engName": "Bachelor of Business Administration - Accounting Concentration",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 25.5
         },
-        "countedSubjects": [6],
-        "weighting": {}
+        "countedSubjects": [6]
     },
     "2120": {
         "code": "JS2120",
         "school": "BU",
         "name": "工商管理學士",
         "engName": "Bachelor of Business Administration",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 26
         },
-        "countedSubjects": [6],
-        "weighting": {}
+        "countedSubjects": [6]
     },
     "2310": {
         "code": "JS2310",
         "school": "BU",
         "name": "傳理學學士",
         "engName": "Bachelor of Communication",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 22
         },
-        "countedSubjects": ["chinese", "english", 3],
-        "weighting": {}
+        "countedSubjects": ["chinese", "english", 3]
     },
     "2320": {
         "code": "JS2320",
         "school": "BU",
         "name": "傳理學學士 - 電影主修 - 動畫及媒體藝術專修",
         "engName": "Bachelor of Communication - Film Major - Animation and Media Arts Concentration",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19
         },
-        "countedSubjects": ["chinese", "english", 3],
-        "weighting": {}
+        "countedSubjects": ["chinese", "english", 3]
     },
     "2330": {
         "code": "JS2330",
         "school": "BU",
         "name": "傳理學學士 - 電影主修 - 電影電視專修",
         "engName": "Bachelor of Communication - Film Major - Film and Television Concentration",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20
         },
-        "countedSubjects": ["chinese", "english", 3],
-        "weighting": {}
+        "countedSubjects": ["chinese", "english", 3]
     },
     "2340": {
         "code": "JS2340",
@@ -1257,7 +1211,6 @@
             "lq": 21
         },
         "countedSubjects": ["eng", 4],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數調整自2019年JS2330，收生分數只供參考。"
     },
     "2410": {
@@ -1325,20 +1278,17 @@
         "school": "BU",
         "name": "理學士",
         "engName": "Bachelor of Science",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 22
         },
-        "countedSubjects": [6],
-        "weighting": {}
+        "countedSubjects": [6]
     },
     "2610": {
         "code": "JS2610",
         "school": "BU",
         "name": "文學士/ 社會科學學士 (地理/ 政治及國際關係學/ 歷史/ 社會學)",
         "engName": "Bachelor of Arts/ Bachelor of Social Sciences (Geography/ Government & International Studies/ History/ Sociology)",
-        "requirements": {},
         "scores": {
             "median": 28,
             "lq": 27
@@ -1353,46 +1303,39 @@
         "school": "BU",
         "name": "體育及康樂管理文學士",
         "engName": "Bachelor of Arts in Physical Education and Recreation Management",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 25
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "2630": {
         "code": "JS2630",
         "school": "BU",
         "name": "歐洲研究社會科學學士 - 法文",
         "engName": "Bachelor of Social Sciences in European Studies - French Stream",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 21.5
         },
-        "countedSubjects": ["english", 4],
-        "weighting": {}
+        "countedSubjects": ["english", 4]
     },
     "2640": {
         "code": "JS2640",
         "school": "BU",
         "name": "歐洲研究社會科學學士 - 德文",
         "engName": "Bachelor of Social Sciences in European Studies - German Stream",
-        "requirements": {},
         "scores": {
             "median": 22.8,
             "lq": 21.8
         },
-        "countedSubjects": ["english", 4],
-        "weighting": {}
+        "countedSubjects": ["english", 4]
     },
     "2660": {
         "code": "JS2660",
         "school": "BU",
         "name": "社會工作學士",
         "engName": "Bachelor of Social Work",
-        "requirements": {},
         "scores": {
             "median": 31.5,
             "lq": 31
@@ -1408,7 +1351,6 @@
         "school": "BU",
         "name": "全球及中國研究社會科學學士",
         "engName": "Bachelor of Social Sciences in Global and China Studies",
-        "requirements": {},
         "scores": {
             "median": 29,
             "lq": 27.5
@@ -1425,20 +1367,17 @@
         "school": "BU",
         "name": "地理/ 歷史/ 社會學及通識教學 (雙學位課程)",
         "engName": "Geography/ History/ Sociology and Liberal Studies Teaching (Double Degree)",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 25
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "2690": {
         "code": "JS2690",
         "school": "BU",
         "name": "地理/ 歷史/ 社會學及個人、社會及人文教學 (雙學位課程)",
-        "engName": "Geography/ History/ Sociology and Personal, Social and Humanities Education Teaching (Double Degree)",
-        "requirements": {}
+        "engName": "Geography/ History/ Sociology and Personal, Social and Humanities Education Teaching (Double Degree)"
         ,
         "scores": {
             "median": 24.8,
@@ -1459,33 +1398,28 @@
         "school": "BU",
         "name": "視覺藝術文學士",
         "engName": "Bachelor of Arts in Visual Arts",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 21
         },
-        "countedSubjects": ["english", 4],
-        "weighting": {}
+        "countedSubjects": ["english", 4]
     },
     "2910": {
         "code": "JS2910",
         "school": "BU",
         "name": "商業計算及數據分析理學士",
         "engName": "Bachelor of Science in Business Computing and Data Analytics",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 22
         },
-        "countedSubjects": [6],
-        "weighting": {}
+        "countedSubjects": [6]
     },
     "7101": {
         "code": "JS7101",
         "school": "LU",
         "name": "中文(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Chinese",
-        "requirements": {},
         "scores": {
             "median": 27.5,
             "lq": 26.5
@@ -1503,7 +1437,6 @@
         "school": "LU",
         "name": "環球博雅教育(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Global Liberal Arts",
-        "requirements": {},
         "scores": {
             "median": 23.5,
             "lq": 22.5
@@ -1519,7 +1452,6 @@
         "school": "LU",
         "name": "工商管理(榮譽)學士",
         "engName": "Bachelor of Business Administration (Honours)",
-        "requirements": {},
         "scores": {
             "median": 25.5,
             "lq": 25
@@ -1535,7 +1467,6 @@
         "school": "LU",
         "name": "翻譯(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Translation",
-        "requirements": {},
         "scores": {
             "median": 27,
             "lq": 26.5
@@ -1553,7 +1484,6 @@
         "school": "LU",
         "name": "工商管理(榮譽)學士 - 風險及保險管理",
         "engName": "Bachelor of Business Administration (Honours) - Risk and Insurance Management",
-        "requirements": {},
         "scores": {
             "median": 25,
             "lq": 25
@@ -1597,7 +1527,6 @@
         "school": "LU",
         "name": "社會科學(榮譽)學士",
         "engName": "Bachelor of Social Sciences (Honours)",
-        "requirements": {},
         "scores": {
             "median": 28,
             "lq": 27
@@ -1614,7 +1543,6 @@
         "school": "LU",
         "name": "當代英語語言文學課程(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Contemporary English Studies",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 26
@@ -1630,7 +1558,6 @@
         "school": "LU",
         "name": "文化研究(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Cultural Studies",
-        "requirements": {},
         "scores": {
             "median": 26,
             "lq": 26
@@ -1646,7 +1573,6 @@
         "school": "LU",
         "name": "歷史(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in History",
-        "requirements": {},
         "scores": {
             "median": 26.8,
             "lq": 26.6
@@ -1664,7 +1590,6 @@
         "school": "LU",
         "name": "哲學(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Philosophy",
-        "requirements": {},
         "scores": {
             "median": 28,
             "lq": 25
@@ -1681,7 +1606,6 @@
         "school": "LU",
         "name": "視覺研究(榮譽)文學士",
         "engName": "Bachelor of Arts (Honours) in Visual Studies",
-        "requirements": {},
         "scores": {
             "median": 24,
             "lq": 23.5
@@ -1708,8 +1632,7 @@
             "median": 25,
             "lq": 23
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4018": {
         "code": "JS4018",
@@ -1748,8 +1671,7 @@
             "median": 24,
             "lq": 23
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4022": {
         "code": "JS4022",
@@ -1767,8 +1689,7 @@
             "median": 24,
             "lq": 24
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4032": {
         "code": "JS4032",
@@ -1807,8 +1728,7 @@
             "median": 24,
             "lq": 22
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4056": {
         "code": "JS4056",
@@ -1826,8 +1746,7 @@
             "median": 26,
             "lq": 25
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4068": {
         "code": "JS4068",
@@ -1845,8 +1764,7 @@
             "median": 25,
             "lq": 23
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4070": {
         "code": "JS4070",
@@ -1864,8 +1782,7 @@
             "median": 25,
             "lq": 23
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4082": {
         "code": "JS4082",
@@ -1883,8 +1800,7 @@
             "median": 24,
             "lq": 23
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4094": {
         "code": "JS4094",
@@ -1902,8 +1818,7 @@
             "median": 23,
             "lq": 23
         },
-        "countedSubjects": ["chinese", "english", 3],
-        "weighting": {}
+        "countedSubjects": ["chinese", "english", 3]
     },
     "4109": {
         "code": "JS4109",
@@ -1921,8 +1836,7 @@
             "median": 22,
             "lq": 22
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4111": {
         "code": "JS4111",
@@ -1941,7 +1855,6 @@
             "lq": 22
         },
         "countedSubjects": [5],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之「宗教研究」學科JS4109，收生分數只供參考。"
     },
     "4123": {
@@ -1960,8 +1873,7 @@
             "median": 28,
             "lq": 27
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4136": {
         "code": "JS4136",
@@ -1979,8 +1891,7 @@
             "median": 21,
             "lq": 21
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4202": {
         "code": "JS4202",
@@ -1998,8 +1909,7 @@
             "median": 25,
             "lq": 24
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4214": {
         "code": "JS4214",
@@ -2017,8 +1927,7 @@
             "median": 39,
             "lq": 38
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "4226": {
         "code": "JS4226",
@@ -2036,8 +1945,7 @@
             "median": 23,
             "lq": 22
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4238": {
         "code": "JS4238",
@@ -2055,8 +1963,7 @@
             "median": 28,
             "lq": 28
         },
-        "countedSubjects": ["english", "maths aMaths", 3],
-        "weighting": {}
+        "countedSubjects": ["english", "maths aMaths", 3]
     },
     "4240": {
         "code": "JS4240",
@@ -2074,8 +1981,7 @@
             "median": 26,
             "lq": 25
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4252": {
         "code": "JS4252",
@@ -2115,8 +2021,7 @@
             "median": 32,
             "lq": 32
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "4264": {
         "code": "JS4264",
@@ -2181,7 +2086,6 @@
             "lq": 32
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之「環球經濟與金融跨學科主修課程」學科JS4254，收生分數只供參考。"
     },
     "4329": {
@@ -2200,8 +2104,7 @@
             "median": 25,
             "lq": 23
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4331": {
         "code": "JS4331",
@@ -2286,8 +2189,7 @@
             "median": 23,
             "lq": 22
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4401": {
         "code": "JS4401",
@@ -2488,8 +2390,7 @@
             "median": 37,
             "lq": 36
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "4502": {
         "code": "JS4502",
@@ -2510,7 +2411,6 @@
             "lq": 40
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "specifications": { "minimumScore": 46 }
     },
     "4513": {
@@ -2556,8 +2456,7 @@
             "median": 34,
             "lq": 33
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "4537": {
         "code": "JS4537",
@@ -2575,8 +2474,7 @@
             "median": 24,
             "lq": 21
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4542": {
         "code": "JS4542",
@@ -2594,8 +2492,7 @@
             "median": 31,
             "lq": 30
         },
-        "countedSubjects": ["main", 2],
-        "weighting": {}
+        "countedSubjects": ["main", 2]
     },
     "4550": {
         "code": "JS4550",
@@ -2615,7 +2512,6 @@
             "lq": 33
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "specifications": { "discardOtherLang": true }
     },
     "4601": {
@@ -2868,7 +2764,6 @@
             "lq": 24
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": {}
     },
     "4848": {
@@ -2978,8 +2873,7 @@
             "median": 26,
             "lq": 25
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4886": {
         "code": "JS4886",
@@ -3040,8 +2934,7 @@
             "median": 24,
             "lq": 24
         },
-        "countedSubjects": [5],
-        "weighting": {}
+        "countedSubjects": [5]
     },
     "4903": {
         "code": "JS4903",
@@ -3071,7 +2964,6 @@
         "school": "EDU",
         "name": "中國語文教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Chinese Language)",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3083,7 +2975,6 @@
         "school": "EDU",
         "name": "英國語文教育榮譽學士 — 小學",
         "engName": "Bachelor of Education (Honours) (English Language) - Primary",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3095,7 +2986,6 @@
         "school": "EDU",
         "name": "小學教育榮譽學士 - 常識",
         "engName": "Bachelor of Education (Honours) (Primary) - General Studies",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3125,7 +3015,6 @@
         "school": "EDU",
         "name": "體育教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Physical Education)",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3155,7 +3044,6 @@
         "school": "EDU",
         "name": "企業、會計與財務概論教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Business, Accounting and Financial Studies)",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3167,7 +3055,6 @@
         "school": "EDU",
         "name": "歷史教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (History)",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 21.5
@@ -3201,7 +3088,6 @@
         "school": "EDU",
         "name": "幼兒教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Early Childhood Education)",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3213,7 +3099,6 @@
         "school": "EDU",
         "name": "地理教育榮譽學士",
         "engName": "Bachelor of Education (Honours) (Geography)",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3243,7 +3128,6 @@
         "school": "EDU",
         "name": "幼兒教育高級文憑",
         "engName": "Higher Diploma in Early Childhood Education",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16.5
@@ -3256,7 +3140,6 @@
         "school": "EDU",
         "name": "語文研究榮譽文學士 (中文主修)",
         "engName": "Bachelor of Arts (Honours) in Language Studies (Chinese Major)",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3271,7 +3154,6 @@
         "school": "EDU",
         "name": "語文研究榮譽文學士 (英文主修)",
         "engName": "Bachelor of Arts (Honours) in Language Studies (English Major)",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3286,7 +3168,6 @@
         "school": "EDU",
         "name": "全球及環境研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences (Honours) in Global and Environmental Studies",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3298,7 +3179,6 @@
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士 (音樂)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture (Music)",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3310,7 +3190,6 @@
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士 (視覺藝術)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture (Visual Arts)",
-        "requirements": {},
         "scores": {
             "median": 19,
             "lq": 18.5
@@ -3322,7 +3201,6 @@
         "school": "EDU",
         "name": "心理學榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences (Honours) in Psychology",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3334,7 +3212,6 @@
         "school": "EDU",
         "name": "特殊教育榮譽文學士",
         "engName": "Bachelor of Arts (Honours) in Special Education",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3346,7 +3223,6 @@
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士及音樂教育榮譽學士 (同期結業雙學位課程)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture and Bachelor of Education (Honours) (Music) Co-terminal Double Degree Programme",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3358,7 +3234,6 @@
         "school": "EDU",
         "name": "創意藝術與文化榮譽文學士及視覺藝術教育榮譽學士 (同期結業雙學位課程)",
         "engName": "Bachelor of Arts (Honours) in Creative Arts and Culture and Bachelor of Education (Honours) (Visual Arts) Co-terminal Double Degree Programme",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19.5
@@ -3370,7 +3245,6 @@
         "school": "EDU",
         "name": "語文研究榮譽文學士及英文教育榮譽學士 (同期結業雙學位課程)",
         "engName": "Bachelor of Arts (Honours) in Language Studies and Bachelor of Education (Honours) (English Language) Co-terminal Double Degree Programme",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 20.5
@@ -3382,7 +3256,6 @@
         "school": "PolyU",
         "name": "應用物理學高級文憑",
         "engName": "HD in Applied Physics",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 15
@@ -3395,7 +3268,6 @@
         "school": "PolyU",
         "name": "屋宇設備工程學高級文憑",
         "engName": "HD in Building Services Engineering",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
@@ -3408,7 +3280,6 @@
         "school": "PolyU",
         "name": "建築科技及管理學高級文憑(工程)",
         "engName": "HD in Building Technology & Management (Engineering)",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
@@ -3421,7 +3292,6 @@
         "school": "PolyU",
         "name": "化學科技高級文憑",
         "engName": "HD in Chemical Technology",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 17
@@ -3434,7 +3304,6 @@
         "school": "PolyU",
         "name": "土木工程學高級文憑",
         "engName": "HD in Civil Engineering",
-        "requirements": {},
         "scores": {
             "median": 19,
             "lq": 18
@@ -3447,7 +3316,6 @@
         "school": "PolyU",
         "name": "電機工程學高級文憑",
         "engName": "HD in Electrical Engineering",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 17
@@ -3460,7 +3328,6 @@
         "school": "PolyU",
         "name": "電子及資訊工程學高級文憑",
         "engName": "HD in Electronic & Information Engineering",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 17
@@ -3473,7 +3340,6 @@
         "school": "PolyU",
         "name": "土地測量及地理資訊學高級文憑",
         "engName": "HD in Land Surveying and Geo-Informatics",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 17
@@ -3486,7 +3352,6 @@
         "school": "PolyU",
         "name": "工業及系統工程學高級文憑",
         "engName": "HD in Industrial & Systems Engineering",
-        "requirements": {},
         "scores": {
             "median": 15,
             "lq": 15
@@ -3499,7 +3364,6 @@
         "school": "PolyU",
         "name": "建築科技及管理學高級文憑(測量)",
         "engName": "HD in Building Technology & Management (Surveying)",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 17
@@ -3512,13 +3376,11 @@
         "school": "PolyU",
         "name": "精神健康護理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Mental Health Nursing",
-        "requirements": {},
         "scores": {
             "median": 27,
             "lq": 25.5
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3349": {
@@ -3526,13 +3388,11 @@
         "school": "PolyU",
         "name": "食品科技與食物安全(榮譽)理學士學位",
         "engName": "BSc (Hons) in Food Safety and Technology",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 20.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3351": {
@@ -3540,13 +3400,11 @@
         "school": "PolyU",
         "name": "運輸系統工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Transportation Systems Engineering",
-        "requirements": {},
         "scores": {
             "median": 22.5,
             "lq": 19
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3375": {
@@ -3554,13 +3412,11 @@
         "school": "PolyU",
         "name": "環境工程與可持續發展學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Environmental Engineering & Sustainable Development",
-        "requirements": {},
         "scores": {
             "median": 20.5,
             "lq": 19
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3387": {
@@ -3568,13 +3424,11 @@
         "school": "PolyU",
         "name": "土地測量及地理資訊學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Land Surveying and Geo-Informatics",
-        "requirements": {},
         "scores": {
             "median": 21.5,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3442": {
@@ -3582,13 +3436,11 @@
         "school": "PolyU",
         "name": "物業管理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Property Management",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3466": {
@@ -3596,13 +3448,11 @@
         "school": "PolyU",
         "name": "會計及金融(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Accounting & Finance",
-        "requirements": {},
         "scores": {
             "median": 24.5,
             "lq": 23
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3478": {
@@ -3610,13 +3460,11 @@
         "school": "PolyU",
         "name": "醫療化驗科學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Medical Laboratory Science",
-        "requirements": {},
         "scores": {
             "median": 36,
             "lq": 36
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3492": {
@@ -3624,13 +3472,11 @@
         "school": "PolyU",
         "name": "服裝及紡織(榮譽)文學士學位組合課程",
         "engName": "BA (Hons) Scheme in Fashion and Textiles",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3507": {
@@ -3638,13 +3484,11 @@
         "school": "PolyU",
         "name": "航空工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Aviation Engineering",
-        "requirements": {},
         "scores": {
             "median": 24.5,
             "lq": 22.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3519": {
@@ -3652,13 +3496,11 @@
         "school": "PolyU",
         "name": "互聯網及多媒體科技(榮譽)理學士學位",
         "engName": "BSc (Hons) in Internet & Multimedia Technologies",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 19
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3533": {
@@ -3666,13 +3508,11 @@
         "school": "PolyU",
         "name": "全球供應鏈管理(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Global Supply Chain Management",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3557": {
@@ -3680,13 +3520,11 @@
         "school": "PolyU",
         "name": "產品及工業工程(榮譽)工學士學位組合課程",
         "engName": "BEng (Hons) Scheme in Product and Industrial Engineering",
-        "requirements": {},
         "scores": {
             "median": 19,
             "lq": 19
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3569": {
@@ -3694,13 +3532,11 @@
         "school": "PolyU",
         "name": "設計學(榮譽)文學士學位組合課程",
         "engName": "BA (Hons) Scheme in Design",
-        "requirements": {},
         "scores": {
             "median": 21.5,
             "lq": 19.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3571": {
@@ -3708,13 +3544,11 @@
         "school": "PolyU",
         "name": "物流及企業工程(榮譽)理學士學位組合課程",
         "engName": "BSc (Hons) Scheme in Logistics and Enterprise Engineering",
-        "requirements": {},
         "scores": {
             "median": 20.5,
             "lq": 20.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3583": {
@@ -3722,13 +3556,11 @@
         "school": "PolyU",
         "name": "管理學(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Management",
-        "requirements": {},
         "scores": {
             "median": 21.5,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3595": {
@@ -3736,13 +3568,11 @@
         "school": "PolyU",
         "name": "金融服務(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Financial Services",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3600": {
@@ -3750,13 +3580,11 @@
         "school": "PolyU",
         "name": "生物醫學工程(榮譽)理學士學位",
         "engName": "BSc (Hons) in Biomedical Engineering",
-        "requirements": {},
         "scores": {
             "median": 24,
             "lq": 23
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3612": {
@@ -3764,13 +3592,11 @@
         "school": "PolyU",
         "name": "放射學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Radiography",
-        "requirements": {},
         "scores": {
             "median": 37.5,
             "lq": 34.5
         },
         "countedSubjects": [6],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3624": {
@@ -3778,13 +3604,11 @@
         "school": "PolyU",
         "name": "職業治療學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Occupational Therapy",
-        "requirements": {},
         "scores": {
             "median": 36,
             "lq": 34.5
         },
         "countedSubjects": [6],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3636": {
@@ -3792,13 +3616,11 @@
         "school": "PolyU",
         "name": "物理治療學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Physiotherapy",
-        "requirements": {},
         "scores": {
             "median": 39,
             "lq": 36
         },
         "countedSubjects": [6],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3648": {
@@ -3806,13 +3628,11 @@
         "school": "PolyU",
         "name": "護理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Nursing",
-        "requirements": {},
         "scores": {
             "median": 28.5,
             "lq": 27
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3650": {
@@ -3820,13 +3640,11 @@
         "school": "PolyU",
         "name": "眼科視光學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Optometry",
-        "requirements": {},
         "scores": {
             "median": 34.5,
             "lq": 33
         },
         "countedSubjects": [6],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3662": {
@@ -3834,13 +3652,11 @@
         "school": "PolyU",
         "name": "社會工作(榮譽)文學士學位",
         "engName": "BA (Hons) in Social Work",
-        "requirements": {},
         "scores": {
             "median": 28.5,
             "lq": 27.5
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3674": {
@@ -3848,13 +3664,11 @@
         "school": "PolyU",
         "name": "國際航運及物流管理(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in International Shipping & Transport Logistics",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3703": {
@@ -3862,13 +3676,11 @@
         "school": "PolyU",
         "name": "電子及資訊工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Electronic & Information Engineering",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3715": {
@@ -3876,13 +3688,11 @@
         "school": "PolyU",
         "name": "電機工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Electrical Engineering",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3739": {
@@ -3890,13 +3700,11 @@
         "school": "PolyU",
         "name": "土木工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Civil Engineering",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3741": {
@@ -3904,13 +3712,11 @@
         "school": "PolyU",
         "name": "機械工程(榮譽)工學士學位組合課程",
         "engName": "BEng (Hons) Scheme in Mechanical Engineering",
-        "requirements": {},
         "scores": {
             "median": 20.5,
             "lq": 19.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3753": {
@@ -3918,13 +3724,11 @@
         "school": "PolyU",
         "name": "屋宇設備工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Building Services Engineering",
-        "requirements": {},
         "scores": {
             "median": 22.5,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3765": {
@@ -3932,13 +3736,11 @@
         "school": "PolyU",
         "name": "社會政策及社會創業(榮譽)文學士學位",
         "engName": "BA (Hons) in Social Policy & Social Entrepreneurship",
-        "requirements": {},
         "scores": {
             "median": 25.5,
             "lq": 22.5
         },
         "countedSubjects": ["main", 2],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3777": {
@@ -3946,13 +3748,11 @@
         "school": "PolyU",
         "name": "結構及消防安全工程學(榮譽)工學士學位",
         "engName": "BEng (Hons) in Structural and Fire Safety Engineering",
-        "requirements": {},
         "scores": {
             "median": 19.5,
             "lq": 19.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3789": {
@@ -3960,13 +3760,11 @@
         "school": "PolyU",
         "name": "地產及建設測量學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Surveying",
-        "requirements": {},
         "scores": {
             "median": 29,
             "lq": 28.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3791": {
@@ -3974,13 +3772,11 @@
         "school": "PolyU",
         "name": "建築工程及管理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Building Engineering and Management",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3806": {
@@ -3988,13 +3784,11 @@
         "school": "PolyU",
         "name": "投資科學及金融分析(榮譽)理學士學位",
         "engName": "BSc (Hons) in Investment Science and Finance Analytics",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 22
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3818": {
@@ -4002,13 +3796,11 @@
         "school": "PolyU",
         "name": "語言學及翻譯學(榮譽)文學士學位",
         "engName": "BA (Hons) in Linguistics and Translation",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true },
         "notice": "本學科為2019年聯招學科JS3480之分拆學科，參考收生分數取自上年之綜合學科。"
     },
@@ -4017,13 +3809,11 @@
         "school": "PolyU",
         "name": "旅遊業及會展管理(榮譽)理學士學位",
         "engName": "BSc (Hons) in Tourism & Events Management",
-        "requirements": {},
         "scores": {
             "median": 21.5,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3832": {
@@ -4031,13 +3821,11 @@
         "school": "PolyU",
         "name": "專業英文(榮譽)文學士學位",
         "engName": "BA (Hons) in English Studies for the Professions",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 21.5
         },
         "countedSubjects": ["chinese", "english", 3],
-        "weighting": {},
         "specifications": { "bonusFor5": true },
         "notice": "本學科為2019年聯招學科JS3480之分拆學科，參考收生分數取自上年之綜合學科。"
     },
@@ -4046,13 +3834,11 @@
         "school": "PolyU",
         "name": "電子計算(榮譽)理學士學位組合課程",
         "engName": "BSc (Hons) Scheme in Computing",
-        "requirements": {},
         "scores": {
             "median": 230,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3882": {
@@ -4060,13 +3846,11 @@
         "school": "PolyU",
         "name": "酒店業管理(榮譽)理學士學位",
         "engName": "BSc (Hons) in Hotel Management",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 23
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3894": {
@@ -4074,13 +3858,11 @@
         "school": "PolyU",
         "name": "市場學(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Marketing",
-        "requirements": {},
         "scores": {
             "median": 21.5,
             "lq": 20.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3911": {
@@ -4088,13 +3870,11 @@
         "school": "PolyU",
         "name": "會計學(榮譽)工商管理學士學位",
         "engName": "BBA (Hons) in Accountancy",
-        "requirements": {},
         "scores": {
             "median": 23.5,
             "lq": 21.5
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3923": {
@@ -4102,13 +3882,11 @@
         "school": "PolyU",
         "name": "應用生物兼生物科技(榮譽)理學士學位",
         "engName": "BSc (Hons) in Applied Biology with Biotechnology",
-        "requirements": {},
         "scores": {
             "median": 21.5,
             "lq": 20
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3985": {
@@ -4116,13 +3894,11 @@
         "school": "PolyU",
         "name": "工程物理學(榮譽)理學士學位",
         "engName": "BSc (Hons) in Engineering Physics",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "3997": {
@@ -4130,13 +3906,11 @@
         "school": "PolyU",
         "name": "化學科技(榮譽)理學士學位",
         "engName": "BSc (Hons) in Chemical Technology",
-        "requirements": {},
         "scores": {
             "median": 20.5,
             "lq": 19
         },
         "countedSubjects": [5],
-        "weighting": {},
         "specifications": { "bonusFor5": true }
     },
     "6004": {
@@ -4144,7 +3918,6 @@
         "school": "HKU",
         "name": "建築學文學士",
         "engName": "Bachelor of Arts in Architectural Studies",
-        "requirements": {},
         "scores": {
             "uq": 41,
             "median": 38,
@@ -4158,7 +3931,6 @@
         "school": "HKU",
         "name": "理學士(測量學)",
         "engName": "Bachelor of Science in Surveying",
-        "requirements": {},
         "scores": {
             "uq": 34,
             "median": 32,
@@ -4172,7 +3944,6 @@
         "school": "HKU",
         "name": "園境學文學士",
         "engName": "Bachelor of Arts in Landscape Studies",
-        "requirements": {},
         "scores": {
             "uq": 34,
             "median": 32,
@@ -4186,7 +3957,6 @@
         "school": "HKU",
         "name": "文學士(建築文物保護)",
         "engName": "Bachelor of Arts in Conservation",
-        "requirements": {},
         "scores": {
             "uq": 28,
             "median": 26,
@@ -4200,7 +3970,6 @@
         "school": "HKU",
         "name": "文學士(城市研究)",
         "engName": "Bachelor of Arts in Urban Studies",
-        "requirements": {},
         "scores": {
             "uq": 30,
             "median": 28,
@@ -4214,7 +3983,6 @@
         "school": "HKU",
         "name": "文學士",
         "engName": "Bachelor of Arts",
-        "requirements": {},
         "scores": {
             "uq": 28,
             "median": 26,
@@ -4228,7 +3996,6 @@
         "school": "HKU",
         "name": "文學士及教育學士(語文教育) - 英文教育 (雙學位課程)",
         "engName": "Bachelor of Arts and Bachelor of Education in Language Education - English (double degree)",
-        "requirements": {},
         "scores": {
             "uq": 28,
             "median": 26,
@@ -4261,7 +4028,6 @@
         "school": "HKU",
         "name": "文學士及教育學士(語文教育) - 中文教育 (雙學位課程)",
         "engName": "Bachelor of Arts and Bachelor of Education in Language Education - Chinese (double degree)",
-        "requirements": {},
         "scores": {
             "uq": 29,
             "median": 28,
@@ -4275,7 +4041,6 @@
         "school": "HKU",
         "name": "教育學士(幼兒教育及特殊教育)",
         "engName": "Bachelor of Education in Early Childhood Education and Special Education",
-        "requirements": {},
         "scores": {
             "uq": 27,
             "median": 23,
@@ -4349,7 +4114,6 @@
         "school": "HKU",
         "name": "教育學士及社會科學學士 (雙學位課程)",
         "engName": "Bachelor of Education and Bachelor of Social Sciences (double degree)",
-        "requirements": {},
         "scores": {
             "uq": 32,
             "median": 31,
@@ -4497,7 +4261,6 @@
         "school": "HKU",
         "name": "護理學學士",
         "engName": "Bachelor of Nursing",
-        "requirements": {},
         "scores": {
             "uq": 26,
             "median": 25,
@@ -4551,7 +4314,6 @@
         "school": "HKU",
         "name": "社會科學學士",
         "engName": "Bachelor of Social Sciences",
-        "requirements": {},
         "scores": {
             "uq": 31,
             "median": 28,
@@ -4584,7 +4346,6 @@
         "school": "HKU",
         "name": "社會工作學學士",
         "engName": "Bachelor of Social Work",
-        "requirements": {},
         "scores": {
             "uq": 27,
             "median": 26,
@@ -4694,7 +4455,6 @@
         "school": "HKU",
         "name": "新聞學學士",
         "engName": "Bachelor of Journalism",
-        "requirements": {},
         "scores": {
             "uq": 32,
             "median": 31,
@@ -5372,72 +5132,61 @@
         "school": "OU",
         "name": "心理學榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Psychology",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 15
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9003": {
         "code": "JS9003",
         "school": "OU",
         "name": "政治及公共行政榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Politics and Public Administration",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9004": {
         "code": "JS9004",
         "school": "OU",
         "name": "應用社會研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Applied Social Studies",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9005": {
         "code": "JS9005",
         "school": "OU",
         "name": "全球與中國研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Global and China Studies",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9006": {
         "code": "JS9006",
         "school": "OU",
         "name": "高齡社會與服務研究榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Ageing Society and Services Studies",
-        "requirements": {},
         "scores": {
             "median": 15,
             "lq": 15
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9007": {
         "code": "JS9007",
         "school": "OU",
         "name": "經濟及公共政策分析榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Economic and Public Policy Analysis",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 17
@@ -5450,7 +5199,6 @@
         "school": "OU",
         "name": "心理學與精神健康榮譽社會科學學士",
         "engName": "Bachelor of Social Sciences with Honours in Psychology and Mental Health",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
@@ -5463,7 +5211,6 @@
         "school": "OU",
         "name": "中文榮譽文學士",
         "engName": "Bachelor of Arts with Honours in Chinese",
-        "requirements": {},
         "scores": {
             "median": 22,
             "lq": 21
@@ -5478,7 +5225,6 @@
         "school": "OU",
         "name": "語言研究與翻譯榮譽文學士",
         "engName": "Bachelor of Arts with Honours in Language Studies and Translation",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 18
@@ -5494,7 +5240,6 @@
         "school": "OU",
         "name": "創意廣告及媒體設計榮譽文學士",
         "engName": "Bachelor of Arts with Honours in Creative Advertising and Media Design",
-        "requirements": {},
         "scores": {
             "median": 21,
             "lq": 19
@@ -5510,13 +5255,11 @@
         "school": "OU",
         "name": "英語及文化榮譽文學士",
         "engName": "Bachelor of Arts with Honours in English Language and Culture",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 15
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice":"本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9017，收生分數只供參考。"
     },
     "9220": {
@@ -5524,78 +5267,66 @@
         "school": "OU",
         "name": "專業會計榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Professional Accounting",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 17
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9222": {
         "code": "JS9222",
         "school": "OU",
         "name": "會計及稅務學榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Accounting and Taxation",
-        "requirements": {},
         "scores": {
             "median": 18,
             "lq": 18
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9230": {
         "code": "JS9230",
         "school": "OU",
         "name": "商業管理學榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Business Management",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 14
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9240": {
         "code": "JS9240",
         "school": "OU",
         "name": "環球商業及市場學榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Global Business and Marketing",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 17
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9250": {
         "code": "JS9250",
         "school": "OU",
         "name": "企業管治榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Corporate Governance",
-        "requirements": {},
         "scores": {
             "median": 15,
             "lq": 15
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9261": {
         "code": "JS9261",
         "school": "OU",
         "name": "數碼商業榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Digital Business",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 16
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9272": {
@@ -5603,13 +5334,11 @@
         "school": "OU",
         "name": "財務及風險管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Finance and Risk Management",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 16
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9276": {
@@ -5617,13 +5346,11 @@
         "school": "OU",
         "name": "房地產及設施管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Real Estate and Facilities Management",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 15
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科，收生分數只供參考。"
     },
     "9280": {
@@ -5631,46 +5358,39 @@
         "school": "OU",
         "name": "應用心理學榮譽學士，商業管理榮譽學士",
         "engName": "Bachelor of Applied Psychology with Honours, Bachelor of Business Management with Honours",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9291": {
         "code": "JS9291",
         "school": "OU",
         "name": "酒店及可持續旅遊管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Hotel and Sustainable Tourism Management",
-        "requirements": {},
         "scores": {
             "median": 15,
             "lq": 14
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9294": {
         "code": "JS9294",
         "school": "OU",
         "name": "運動及電競運動管理榮譽工商管理學士",
         "engName": "Bachelor of Business Administration with Honours in Sports and eSports Management",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9530": {
         "code": "JS9530",
         "school": "OU",
         "name": "英語教學榮譽教育學士及英語研究榮譽學士",
         "engName": "Bachelor of Education with Honours in English Language Teaching and Bachelor of English Language Studies with Honours",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 20
@@ -5683,7 +5403,6 @@
         "school": "OU",
         "name": "英語研究榮譽學士",
         "engName": "Bachelor of English Language Studies with Honours",
-        "requirements": {},
         "scores": {
             "median": 19,
             "lq": 19
@@ -5696,7 +5415,6 @@
         "school": "OU",
         "name": "語言研究榮譽學士(應用中國語言)",
         "engName": "Bachelor of Language Studies with Honours (Applied Chinese Language Studies)",
-        "requirements": {},
         "scores": {
             "median": 23,
             "lq": 23
@@ -5709,7 +5427,6 @@
         "school": "OU",
         "name": "教育榮譽學士（中國語文教學）及語言研究榮譽學士（應用中國語言）",
         "engName": "Bachelor of Education with Honours (Chinese Language Teaching) and Bachelor of Language Studies with Honours (Applied Chinese Language Studies)",
-        "requirements": {},
         "scores": {
             "median": 20,
             "lq": 19
@@ -5722,13 +5439,11 @@
         "school": "OU",
         "name": "語言研究(雙語傳意)榮譽學士，國際商業榮譽學士",
         "engName": "Bachelor of Language Studies with Honours (Bilingual Communication), Bachelor of Global Business with Honours",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 15
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9580": {
         "code": "JS9580",
@@ -5745,34 +5460,29 @@
             "median": 16,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9720": {
         "code": "JS9720",
         "school": "OU",
         "name": "電子及電腦工程學榮譽工學士",
         "engName": "Bachelor of Engineering with Honours in Electronic and Computer Engineering",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 16
         },
-        "countedSubjects": ["main", 1],
-        "weighting": {}
+        "countedSubjects": ["main", 1]
     },
     "9731": {
         "code": "JS9731",
         "school": "OU",
         "name": "環境科學與綠色管理榮譽理學士",
         "engName": "Bachelor of Science with Honours in Environmental Science and Green Management",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9768，收生分數只供參考。"
     },
     "9732": {
@@ -5780,13 +5490,11 @@
         "school": "OU",
         "name": "生命科學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Life Sciences",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9768，收生分數只供參考。"
     },
     "9769": {
@@ -5794,13 +5502,11 @@
         "school": "OU",
         "name": "食品測試科學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Food Testing Science",
-        "requirements": {},
         "scores": {
             "median": 17,
             "lq": 16
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9768，收生分數只供參考。"
     },
     "9780": {
@@ -5808,13 +5514,11 @@
         "school": "OU",
         "name": "數據科學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Data Science",
-        "requirements": {},
         "scores": {
             "median": 16,
             "lq": 16
         },
         "countedSubjects": ["main", 1],
-        "weighting": {},
         "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之學科JS9720，收生分數只供參考。"
     },
     "9790": {
@@ -5822,6 +5526,128 @@
         "school": "OU",
         "name": "物理治療學榮譽理學士",
         "engName": "Bachelor of Science with Honours in Physiotherapy",
-        "requirements": {}
+        "scores": {
+            "median": 23,
+            "lq": 22
+        },
+        "countedSubjects": [5],
+        "notice": "本學科為2020年新聯招學科，參考分數及計分方法取自2019年東華學院物理治療學，收生分數只供參考。"
+    },
+    "SA01": {
+        "code": "JSSA01",
+        "school": "CIHK_SSSDP",
+        "name": "護理學榮譽學士",
+        "engName": "Bachelor of Nursing (Honours)",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true }
+    },
+    "SA02": {
+        "code": "JSSA02",
+        "school": "CIHK_SSSDP",
+        "name": "數碼娛樂榮譽理學士",
+        "engName": "Bachelor of Science (Honours) in Digital Entertainment",
+        "scores": {
+            "median": 15,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true }
+    },
+    "SC02": {
+        "code": "JSSC02",
+        "school": "CHC_SSSDP",
+        "name": "建築學（榮譽）理學士",
+        "engName": "Bachelor of Science (Hons) in Architecture",
+        "scores": {
+            "median": 19,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1]
+    },
+    "SC03": {
+        "code": "JSSC03",
+        "school": "CHC_SSSDP",
+        "name": "資訊科學（榮譽）理學士",
+        "engName": "Bachelor of Science (Hons) in Computer Science",
+        "scores": {
+            "median": 18,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1]
+    },
+    "SC04": {
+        "code": "JSSC04",
+        "school": "CHC_SSSDP",
+        "name": "傳播及跨媒體（榮譽）文學士",
+        "engName": "Bachelor of Arts (Hons) in Communication and Crossmedia",
+        "scores": {
+            "median": 19,
+            "lq": 12
+        },
+        "countedSubjects": ["main", 1]
+    },
+    "SH01": {
+        "code": "JSSH01",
+        "school": "HSU_SSSDP",
+        "name": "供應鏈管理工商管理（榮譽）學士",
+        "engName": "Bachelor of Business Administration (Honours) in Supply Chain Management",
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "SH02": {
+        "code": "JSSH02",
+        "school": "HSU_SSSDP",
+        "name": "精算及保險（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Actuarial Studies and Insurance",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "SH03": {
+        "code": "JSSH03",
+        "school": "HSU_SSSDP",
+        "name": "應用及人本計算學（榮譽）文學士",
+        "engName": "Bachelor of Arts (Honours) in Applied and Human- Centred Computing",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "SH04": {
+        "code": "JSSH04",
+        "school": "HSU_SSSDP",
+        "name": "數據科學及商業智能學（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Data Science and Business Intelligence",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "SH05": {
+        "code": "JSSH05",
+        "school": "HSU_SSSDP",
+        "name": "管理科學與資訊管理（榮譽）學士",
+        "engName": "Bachelor of Management Science and Information Management",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
     }
 }

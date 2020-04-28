@@ -108,10 +108,10 @@ class Result {
 
         let testedSubjects = [];
         for (let req in requirements) {
-            let testingSubjects = req.split(" "); // Deal with get-one-then-satisfy subject requirements.
+            let requiredSubjects = req.split(" "); // Deal with get-one-then-satisfy subject requirements.
             let requiredGrade = requirements[req];
 
-            let [subjectName, score] = this.getBestSubjectStateless(testingSubjects, testedSubjects, true, true);
+            let [subjectName, score] = this.getBestSubjectStateless(requiredSubjects, testedSubjects, true, true);
             if (subjectName === "" || score < requiredGrade) return false;
             testedSubjects.push(subjectName);
         }
@@ -173,10 +173,6 @@ class Result {
         return totalScore;
     }
 
-    getBestSubjectsStateless(count = 1, include = null, exclude = null, rawScore = false) {
-        return this.getBestSubjects(count, include, exclude, rawScore, false);
-    }
-
     getBestElective(include = null, exclude = null, rawScore = false, getSubjectName = false, useState = true) {
         if (!Array.isArray(exclude)) exclude = [];
         return this.getBestSubject(include, exclude.concat(mainSubjects), rawScore, getSubjectName, useState);
@@ -191,24 +187,9 @@ class Result {
         return this.getBestSubjects(count, include, exclude.concat(mainSubjects), rawScore, useState);
     }
 
-    getBestElectivesStateless(count = 1, include = null, exclude = null, rawScore = false) {
-        return this.getBestElectives(count, include, exclude, rawScore, false);
-    }
-
     getMain() {
         this.calculatedSubjects.concat(mainSubjects);
         return this.score.chinese + this.score.english + this.score.maths + this.score.ls;
-    }
-
-    removeSubjectFromState(subjectName) {
-        let index = this.calculatedSubjects.indexOf(subjectName);
-        this.calculatedSubjects.splice(index, 1);
-        return this.calculatedSubjects;
-    }
-
-    addSubjectToState(subjectName) {
-        this.calculatedSubjects.push(subjectName);
-        return this.calculatedSubjects;
     }
 }
 

@@ -8,12 +8,19 @@
         "BU": "香港浸會大學",
         "LU": "嶺南大學",
         "EDU": "香港教育大學",
-        "OU": "香港公開大學"
+        "OU": "香港公開大學",
+
+        "OU_SSSDP": "香港公開大學",
+        "HSU_SSSDP": "香港恆生大學",
+        "VTC_SSSDP": "THEi",
+        "CIHE_SSSDP": "明愛專上學院",
+        "CHC_SSSDP": "珠海學院",
+        "TWC_SSSDP": "東華學院"
     },
     "uniCategory": {
         "UGC": ["HKU", "CU", "UST", "CityU", "PolyU", "BU", "LU", "EDU"],
         "SF": ["OU"],
-        "SSSDP": []
+        "SSSDP": ["OU_SSSDP", "HSU_SSSDP", "VTC_SSSDP", "CIHE_SSSDP", "CHC_SSSDP", "TWC_SSSDP"]
     },
     "basicElectiveRequirements": {
         "HKU": [3, 2],
@@ -21,10 +28,7 @@
         "UST": [3, 2],
         "CityU": [3, 2],
         "PolyU": [3, 2],
-        "BU": [3, 2],
-        "LU": [2, 1],
-        "EDU": [2, 1],
-        "OU": [2, 1]
+        "BU": [3, 2]
     },
     "otherLangRatio": {
         "CityU": {
@@ -59,20 +63,21 @@
             "E": 1,
             "F": 0
         },
-        "UST": {
+        "EDU": {
+            "A": 7,
+            "B": 6,
+            "C": 5,
+            "D": 4,
+            "E": 3,
+            "F": 0
+        },
+        "default": {
             "A": 0,
             "B": 0,
             "C": 0,
             "D": 0,
             "E": 0,
             "F": 0
-        },
-        "EDU": {
-            "A": 7,
-            "B": 6,
-            "C": 5,
-            "D": 4,
-            "E": 3
         }
     }
 }
