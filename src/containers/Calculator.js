@@ -173,6 +173,7 @@ class Calculator extends React.Component {
                         {this.state.electiveCount}
                         <button onClick={this.electiveDecreaseHandler} disabled={this.state.electiveCount <= 1}>-</button>
                     </div>
+
                     <div className="inputContainer">
                         {electiveItems}
                     </div>
@@ -198,6 +199,7 @@ class Calculator extends React.Component {
                     </div>
 
                 </form>
+
                 <div className="submit">
                     <button onClick={this.calculationHandler}>計算</button>
                 </div>
