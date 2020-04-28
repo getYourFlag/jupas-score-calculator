@@ -24,6 +24,7 @@
     box-sizing: border-box;
     display: inline-block;
     flex-shrink: 0;
+
     border: 1px solid darkgray;
     border-radius: 10px;
     width: 20%;

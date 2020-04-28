@@ -7,6 +7,11 @@ import EDULogo from "../assets/eduhk.svg";
 import HKULogo from "../assets/HKU.svg";
 import OULogo from "../assets/ouhk.png";
 import PolyULogo from "../assets/PolyU.svg";
+import hsulogo from "../assets/hsu.svg";
+import cihelogo from "../assets/cihe.svg";
+import chclogo from "../assets/chc.jpg";
+import theilogo from "../assets/thei.svg";
+import twclogo from "../assets/twc.svg";
 
 const logos = {
     "CityU": cityULogo,
@@ -17,7 +22,13 @@ const logos = {
     "EDU": EDULogo,
     "HKU": HKULogo,
     "OU": OULogo,
-    "PolyU": PolyULogo
+    "PolyU": PolyULogo,
+    "OU_SSSDP": OULogo,
+    "HSU_SSSDP": hsulogo,
+    "CIHE_SSSDP": cihelogo,
+    "CHC_SSSDP": chclogo,
+    "VTC_SSSDP": theilogo,
+    "TWC_SSSDP": twclogo
 }
 
 export default logos;

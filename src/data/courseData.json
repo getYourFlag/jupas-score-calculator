@@ -5649,5 +5649,350 @@
         },
         "countedSubjects": ["main", 1],
         "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "ST01": {
+        "code": "JSST01",
+        "school": "TWC_SSSDP",
+        "name": "護理學（榮譽）健康科學學士",
+        "engName": "Bachelor of Health Science (Honours) in Nursing",
+        "scores": {
+            "median": 19,
+            "lq": 18
+        },
+        "countedSubjects": [5],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "ST02": {
+        "code": "JSST02",
+        "school": "TWC_SSSDP",
+        "name": "醫療化驗科學（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Medical Laboratory Science",
+        "requirements": {
+            "Chem CSBC CSCP": 2
+        },
+        "scores": {
+            "median": 21,
+            "lq": 21
+        },
+        "countedSubjects": [5],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "ST03": {
+        "code": "JSST03",
+        "school": "TWC_SSSDP",
+        "name": "放射治療學（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Radiation Therapy",
+        "requirements": {
+            "Bio Chem Phy CSCP CSBC CSBP IS": 3
+        },
+        "scores": {
+            "median": 23,
+            "lq": 22
+        },
+        "countedSubjects": [5],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "ST04": {
+        "code": "JSST04",
+        "school": "TWC_SSSDP",
+        "name": "職業治療學（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Occupational Therapy",
+        "scores": {
+            "median": 22,
+            "lq": 21
+        },
+        "countedSubjects": [5],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "ST05": {
+        "code": "JSST05",
+        "school": "TWC_SSSDP",
+        "name": "物理治療學（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Physiotherapy",
+        "scores": {
+            "median": 23,
+            "lq": 23
+        },
+        "countedSubjects": [5],
+        "specifications": { "discardOtherLang": true, "aMaths": "discard" }
+    },
+    "SU12": {
+        "code": "JSSU12",
+        "school": "OU_SSSDP",
+        "name": "創意寫作與電影藝術榮譽文學士",
+        "engName": "Bachelor of Arts with Honours in Creative Writing and Film Arts",
+        "scores": {
+            "median": 20,
+            "lq": 19
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {
+            "chinese": 1.5,
+            "english": 1.5
+        },
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU14": {
+        "code": "JSSU14",
+        "school": "OU_SSSDP",
+        "name": "動畫及視覺特效榮譽藝術學士",
+        "engName": "Bachelor of Fine Arts with Honours in Animation and Visual Effects",
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU15": {
+        "code": "JSSU15",
+        "school": "OU_SSSDP",
+        "name": "影像設計及數碼藝術榮譽藝術學士",
+        "engName": "Bachelor of Fine Arts with Honours in Cinematic Design and Photographic Digital Art",
+        "scores": {
+            "median": 20,
+            "lq": 18
+        },
+        "countedSubjects": ["main", 1],
+        "weighting": {
+            "chinese": 1.5,
+            "english": 1.5
+        },
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU40": {
+        "code": "JSSU40",
+        "school": "OU_SSSDP",
+        "name": "護理學榮譽學士（普通科）",
+        "engName": "Bachelor of Nursing with Honours in General Health Care",
+        "requirements": {
+            "Bio Chem Phy CSCP CSBC CSBP IS": 2
+        },
+        "scores": {
+            "median": 20,
+            "lq": 19
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU50": {
+        "code": "JSSU50",
+        "school": "OU_SSSDP",
+        "name": "護理學榮譽學士（精神科）",
+        "engName": "Bachelor of Nursing with Honours in Mental Health Care",
+        "requirements": {
+            "Bio Chem Phy CSCP CSBC CSBP IS": 2
+        },
+        "scores": {
+            "median": 18,
+            "lq": 17
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU65": {
+        "code": "JSSU65",
+        "school": "OU_SSSDP",
+        "name": "檢測和認證榮譽工學士",
+        "engName": "Bachelor of Engineering with Honours in Testing and Certification",
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU68": {
+        "code": "JSSU68",
+        "school": "OU_SSSDP",
+        "name": "檢測科學和認證榮譽理學士",
+        "engName": "Bachelor of Science with Honours in Testing Science and Certification",
+        "scores": {
+            "median": 16,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" },
+        "notice": "本學科為2020年新聯招學科，參考收生分數取自上年同學院之JSSU65學科，收生分數只供參考。"
+    },
+    "SU71": {
+        "code": "JSSU71",
+        "school": "OU_SSSDP",
+        "name": "互聯網科技榮譽電腦學學士",
+        "engName": "Bachelor of Computing with Honours in Internet Technology",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU90": {
+        "code": "JSSU90",
+        "school": "OU_SSSDP",
+        "name": "國際款待及景區管理榮譽學士",
+        "engName": "Bachelor of International Hospitality and Attractions Management with Honours",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU95": {
+        "code": "JSSU95",
+        "school": "OU_SSSDP",
+        "name": "運動及康樂管理榮譽學士",
+        "engName": "Bachelor of Sports and Recreation Management with Honours",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU96": {
+        "code": "JSSU96",
+        "school": "OU_SSSDP",
+        "name": "金融科技及創新榮譽工商管理學士",
+        "engName": "Bachelor of Business Administration with Honours in Financial Technology and Innovation",
+        "scores": {
+            "median": 16,
+            "lq": 15
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SU97": {
+        "code": "JSSU97",
+        "school": "OU_SSSDP",
+        "name": "環球市場及供應鏈榮譽工商管理學士",
+        "engName": "Bachelor of Business Administration with Honours in Global Marketing and Supply Chain Management",
+        "scores": {
+            "median": 17,
+            "lq": 16
+        },
+        "countedSubjects": ["main", 1],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV01": {
+        "code": "JSSV01",
+        "school": "VTC_SSSDP",
+        "name": "時裝設計（榮譽）文學士",
+        "engName": "Bachelor of Arts (Honours) in Fashion Design",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV02": {
+        "code": "JSSV02",
+        "school": "VTC_SSSDP",
+        "name": "產品設計（榮譽）文學士",
+        "engName": "Bachelor of Arts (Honours) in Product Design",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV03": {
+        "code": "JSSV03",
+        "school": "VTC_SSSDP",
+        "name": "園境建築（榮譽）文學士",
+        "engName": "Bachelor of Arts (Honours) in Landscapr Architecture",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV04": {
+        "code": "JSSV04",
+        "school": "VTC_SSSDP",
+        "name": "廚藝及管理（榮譽）文學士",
+        "engName": "Bachelor of Arts (Honours) in Culinary Arts and Management",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV05": {
+        "code": "JSSV05",
+        "school": "VTC_SSSDP",
+        "name": "土木工程（榮譽）工學士",
+        "engName": "Bachelor of Engineering (Honours) in Civil Engineering",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV07": {
+        "code": "JSSV07",
+        "school": "VTC_SSSDP",
+        "name": "園藝及園境管理（榮譽）文學士",
+        "engName": "Bachelor of Arts (Honours) in Horticulture and Landscape Management",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV08": {
+        "code": "JSSV08",
+        "school": "VTC_SSSDP",
+        "name": "測量學（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Surveying",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV09": {
+        "code": "JSSV09",
+        "school": "VTC_SSSDP",
+        "name": "運動及康樂管理（榮譽）社會科學學士",
+        "engName": "Bachelor of Social Science (Honours) in Sports and Recreation Management",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV11": {
+        "code": "JSSV11",
+        "school": "VTC_SSSDP",
+        "name": "創新及多媒體科技（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Multimedia Technology and Innovation",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
+    },
+    "SV12": {
+        "code": "JSSV12",
+        "school": "VTC_SSSDP",
+        "name": "資訊及通訊科技（榮譽）理學士",
+        "engName": "Bachelor of Science (Honours) in Information and Communications Technology",
+        "scores": {
+            "median": 17,
+            "lq": 17
+        },
+        "countedSubjects": [5],
+        "specifications": { "aMaths": "discard" }
     }
 }
