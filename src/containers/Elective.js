@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Elective.css";
 import "../components/InputField";
-import subjects from "../data/subjects.json";
+import { subjects, prohibitedCombinations } from "../data/subjects.json";
 
 class Elective extends React.PureComponent {
     state = {
@@ -19,11 +19,25 @@ class Elective extends React.PureComponent {
     }
 
     render() {
-        let optionList = [];
-        for (let subject in subjects) {
-            let disabled = this.props.currentList.includes(subject);
-            optionList.push(<option key={subject} value={subject} disabled={disabled}>{subjects[subject]}</option>);
+        let disabledElectives = [...this.props.electiveList];
+        for (let subjectCode of disabledElectives) {
+            if (prohibitedCombinations[subjectCode] && this.state.value !== subjectCode) {
+                disabledElectives = disabledElectives.concat(prohibitedCombinations[subjectCode]);
+                break;
+            }
         }
+        console.log(disabledElectives);
+
+        let optionList = Object.entries(subjects).map(([subjectCode, subjectName]) => {
+            return (
+                <option 
+                    key={subjectCode} 
+                    value={subjectCode} 
+                    disabled={disabledElectives.includes(subjectCode)}>
+                        {subjectName}
+                </option>
+            );
+        });
 
         return (
         <div className="electiveInput">

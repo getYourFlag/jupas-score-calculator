@@ -44,15 +44,17 @@ class Calculator extends React.Component {
         this.setState({ electiveCount: this.state.electiveCount - 1});
     }
 
-    electiveChangeHandler = (oldValue, newValue) => {
-        const newList = [...this.state.electiveList];
-        const newScore = {...this.state.score};
-        const orgGrade = newScore[oldValue];
-        let index = newList.indexOf(oldValue);
-        index !== -1 ? newList[index] = newValue : newList.push(newValue);
-        delete newScore[oldValue];
-        newScore[newValue] = orgGrade;
-        this.setState({ score: newScore , electiveList: newList });
+    electiveChangeHandler = (oldSubject, newSubject) => {
+        const electiveList = [...this.state.electiveList];
+        const score = {...this.state.score};
+        const grade = score[oldSubject];
+
+        let eIndex = electiveList.indexOf(oldSubject);
+        eIndex !== -1 ? electiveList[eIndex] = newSubject : electiveList.push(newSubject);
+
+        delete score[oldSubject];
+        score[newSubject] = grade;
+        this.setState({ score, electiveList });
     }
 
     aMathHandler = event => {
@@ -80,14 +82,15 @@ class Calculator extends React.Component {
     }
 
     electiveDeleteHandler = (name) => {
-        let newList = [...this.state.electiveList];
-        let newScore = {...this.state.score};
-        let index = newList.indexOf(name);
-        if (index !== -1) {
-            newList.splice(index, 1);
-            delete newScore[name];
-            this.setState({score: newScore, electiveList: newList});
+        let electiveList = [...this.state.electiveList];
+        let score = {...this.state.score};
+
+        let eIndex = electiveList.indexOf(name);
+        if (eIndex !== -1) {
+            electiveList.splice(eIndex, 1);
+            delete score[name];
         }
+        this.setState({ score, electiveList });
     }
 
     calculationHandler = () => {
@@ -124,37 +127,15 @@ class Calculator extends React.Component {
     render() {
         if (this.state.calculated) return <Redirect to="/result" />
 
-        let increElective = this.state.electiveCount >= 4;
-        let decreElective = this.state.electiveCount <= 1;
-        let aMathInput = null; let otherLangInput = null; let electiveItems = [];
-        let errorMessage = null;
-
-        if (this.state.aMath) {
-            aMathInput = <InputField 
-                id="aMaths" 
-                changed={event => this.inputHandler("aMaths", event)}
-            >成績：</InputField>;
-        }
-        if (this.state.otherLang) {
-            otherLangInput = <InputField 
-                id="otherLang" 
-                changed={this.otherLangChangeHandler}
-            >成績：</InputField>;
-        }
-        if (this.state.error) {
-            errorMessage = (<div className="alert">
-                <p>{this.state.error}</p>
-            </div>);
-        }
+        let electiveItems = [];
 
         for (let i = 0; i < this.state.electiveCount; i++) {
             electiveItems.push(
                 <Elective 
                     key={`Elective${i}`}
                     keyId={`Elective${i}`}
-                    dropdown={this.electiveAddHandler} 
                     scoreChange={this.inputHandler} 
-                    currentList={this.state.electiveList} 
+                    electiveList={this.state.electiveList} 
                     cleanup={this.electiveDeleteHandler}
                     changeElective={this.electiveChangeHandler} />);
         }
@@ -177,15 +158,20 @@ class Calculator extends React.Component {
                         <div>
                             <label>有否修讀：</label><input type="checkbox" onChange={this.aMathHandler}/>
                         </div>
-                        {aMathInput}
+                        {this.state.aMath ? (
+                            <InputField 
+                                id="aMaths" 
+                                changed={event => this.inputHandler("aMaths", event)}
+                            >成績：</InputField>
+                        ): null}
                     </div>
 
                     <p><span>甲類選修科目</span></p>
                     <div className="inputRow">
                         <label>科目數量：</label>
-                        <button onClick={this.electiveIncreaseHandler} disabled={increElective}>+</button>
+                        <button onClick={this.electiveIncreaseHandler} disabled={this.state.electiveCount >= 4}>+</button>
                         {this.state.electiveCount}
-                        <button onClick={this.electiveDecreaseHandler} disabled={decreElective}>-</button>
+                        <button onClick={this.electiveDecreaseHandler} disabled={this.state.electiveCount <= 1}>-</button>
                     </div>
                     <div className="inputContainer">
                         {electiveItems}
@@ -196,7 +182,12 @@ class Calculator extends React.Component {
                         <div>
                             <label>有否修讀：</label><input type="checkbox" onChange={this.otherLangHandler}/>
                         </div>
-                        {otherLangInput}
+                        {this.state.otherLang ? (
+                            <InputField 
+                                id="otherLang" 
+                                changed={this.otherLangChangeHandler}
+                            >成績：</InputField>
+                        ) : null}
                     </div>
 
                     <p><span>考生資料</span></p>
@@ -211,7 +202,11 @@ class Calculator extends React.Component {
                     <button onClick={this.calculationHandler}>計算</button>
                 </div>
 
-                {errorMessage}
+                {this.state.error ? (
+                    <div className="alert">
+                        <p>{this.state.error}</p>
+                    </div>
+                ) : null}
             </div>
         )
     }
