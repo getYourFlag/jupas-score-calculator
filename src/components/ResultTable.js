@@ -19,14 +19,13 @@ const getMethod = methods => {
         }
     }
 
-    if (coreCounted) return `4C+${subjectCount}X`;
-    return `Best ${subjectCount}`;
+    if (coreCounted) return `主修+${subjectCount}選修`;
+    return `最佳${subjectCount}科`;
 }
 
 const ResultTable = props => {
     const results = props.results ? props.results : {};
     
-
     let rows = Object.keys(results).slice(props.index, props.index + 15).map(code => {
         let [admissionChance, admissionStyle] = admissionStyles[results[code].chance];
         let course = courseList[code];

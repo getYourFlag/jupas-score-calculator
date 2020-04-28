@@ -4,13 +4,13 @@
         "3": ["高", "admHigh"],
         "2": ["中", "admMid"],
         "1": ["低", "admLow"],
-        "0": ["難以入讀", "admNo"],
-        "-1": ["不符合條件", "admImpossible"]
+        "0": ["渺茫", "admNo"],
+        "-1": ["未達要求", "admImpossible"]
     },
     "includedSubjects": {
-        "main2": "4C+2X",
-        "main1": "4C+1X",
-        "5": "Best 5",
-        "6": "Best 6"
+        "main2": "主科+2選修科",
+        "main1": "主科+1選修科",
+        "5": "最佳5科",
+        "6": "最佳6科"
     }
 }

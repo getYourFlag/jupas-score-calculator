@@ -5535,7 +5535,7 @@
     },
     "SA01": {
         "code": "JSSA01",
-        "school": "CIHK_SSSDP",
+        "school": "CIHE_SSSDP",
         "name": "護理學榮譽學士",
         "engName": "Bachelor of Nursing (Honours)",
         "scores": {
@@ -5547,7 +5547,7 @@
     },
     "SA02": {
         "code": "JSSA02",
-        "school": "CIHK_SSSDP",
+        "school": "CIHE_SSSDP",
         "name": "數碼娛樂榮譽理學士",
         "engName": "Bachelor of Science (Honours) in Digital Entertainment",
         "scores": {

@@ -114,6 +114,9 @@ class Calculator extends React.Component {
         } else if (electiveCount === 0) {
             return this.setState({error: "你並未輸入任何選修科的資料！"});
         }
+        // Store to local storage.
+        localStorage.setItem('score', JSON.stringify(this.state.score));
+        localStorage.setItem('isRetaker', this.state.retaker);
 
         // Calculate
         let result = calculate(score, this.state.retaker);

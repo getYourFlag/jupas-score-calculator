@@ -6,6 +6,7 @@ import Backdrop from "../components/UI/Backdrop";
 import CourseNote from "../components/UI/courseNote";
 import ResultTable from "../components/ResultTable";
 
+import calculate from "../lib/mainCal";
 import courseList from "../data/courseData.json";
 import { uniNames, uniCategory } from "../data/university.json";
 import logos from "../lib/logo";
@@ -39,25 +40,31 @@ class Results extends React.Component {
 
     lastPageHandler = () => {
         this.setState({pageNum: this.state.pageNum - 1});
-        document.getElementById("tableTop").scrollIntoView();
     }
 
     nextPageHandler = () => {
         this.setState({pageNum: this.state.pageNum + 1});
-        document.getElementById("tableTop").scrollIntoView();
     }
 
     render() {
-        // if (!this.props.result) return <Redirect to="/cal" />
+        let calculatedResult = this.props.result;
+        if (!calculatedResult) {
+            const scores = JSON.parse(localStorage.getItem('score'));
+            const isRetaker = localStorage.getItem('isRetaker');
+            if (!(scores && isRetaker)) {
+                return <Redirect to="/cal" />
+            }
+            calculatedResult = calculate(scores, isRetaker);
+        }
         
         let currentUniResults = null;
-        if (this.props.result && this.state.currentUni) {
-            currentUniResults = Object.keys(this.props.result).filter(key => {
+        if (this.state.currentUni) {
+            currentUniResults = Object.keys(calculatedResult).filter(key => {
                 return courseList[key].school === this.state.currentUni
             }).reduce((obj, key) => {
                 return { 
                     ...obj, 
-                    [key]: this.props.result[key]
+                    [key]: calculatedResult[key]
                 }
             }, {});
         }
@@ -100,7 +107,7 @@ class Results extends React.Component {
                 <div className="uniSelect" id="uniSelect">
                     {uniButtons}
                 </div>
-                <div id="tableTop" />
+                <div id="tableTop"></div>
                 {this.state.currentUni ? 
                     <ResultTable 
                         results={currentUniResults}
@@ -113,6 +120,14 @@ class Results extends React.Component {
                     /> : (<h3>請點選院校以查看該院校課程的入學機率</h3>) }
             </div>
         )
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.currentUni !== prevState.currentUni) {
+            document.querySelector(".resultPage").scrollIntoView();
+        } else if (this.state.category !== prevState.category) {
+            document.querySelector(".resultPage").scrollIntoView();
+        }
     }
 }
 
