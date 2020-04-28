@@ -10,13 +10,18 @@
         "EDU": "香港教育大學",
         "OU": "香港公開大學"
     },
+    "uniCategory": {
+        "UGC": ["HKU", "CU", "UST", "CityU", "PolyU", "BU", "LU", "EDU"],
+        "SF": ["OU"],
+        "SSSDP": []
+    },
     "basicElectiveRequirements": {
         "HKU": [3, 2],
         "CU": [3, 2],
         "UST": [3, 2],
         "CityU": [3, 2],
         "PolyU": [3, 2],
-        "BU": [2, 1],
+        "BU": [3, 2],
         "LU": [2, 1],
         "EDU": [2, 1],
         "OU": [2, 1]

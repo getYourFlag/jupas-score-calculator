@@ -24,8 +24,11 @@ const getMethod = methods => {
 }
 
 const ResultTable = props => {
-    let rows = Object.keys(props.results).slice(props.index, props.index + 15).map(code => {
-        let [admissionChance, admissionStyle] = admissionStyles[props.results[code].chance];
+    const results = props.results ? props.results : {};
+    
+
+    let rows = Object.keys(results).slice(props.index, props.index + 15).map(code => {
+        let [admissionChance, admissionStyle] = admissionStyles[results[code].chance];
         let course = courseList[code];
 
         return (
@@ -37,7 +40,7 @@ const ResultTable = props => {
                     >{course.name}</td>
                 <td className="calMethod">{getMethod(course.countedSubjects)}</td>
                 <td>{course.scores.median}</td>
-                <td>{props.results[code].score}</td>
+                <td>{results[code].score}</td>
                 <td className={admissionStyle}>{admissionChance}</td>
             </tr>
         );
@@ -65,7 +68,7 @@ const ResultTable = props => {
             </div>
             <PageTurn
                 number={props.pageNum} 
-                maxNumber={Math.ceil(Object.keys(props.results).length / 15)} 
+                maxNumber={Math.ceil(Object.keys(results).length / 15)} 
                 lastPage={props.lastPageHandler}
                 nextPage={props.nextPageHandler} /> 
         </Fragment>

@@ -7,7 +7,7 @@ import CourseNote from "../components/UI/courseNote";
 import ResultTable from "../components/ResultTable";
 
 import courseList from "../data/courseData.json";
-import { uniNames } from "../data/university.json";
+import { uniNames, uniCategory } from "../data/university.json";
 import logos from "../lib/logo";
 
 class Results extends React.Component {
@@ -15,12 +15,18 @@ class Results extends React.Component {
         currentUni: null,
         showModal: false,
         modalContent: null,
-        pageNum: 1
+        pageNum: 1,
+        category: 'UGC'
     }
 
     changeUniHandler = event => {
         event.preventDefault();
         this.setState({currentUni: event.currentTarget.value, pageNum: 1});
+    }
+
+    changeCategoryHandler = event => {
+        event.preventDefault();
+        this.setState({category: event.currentTarget.value, currentUni: null})
     }
 
     openModalToggler = content => {
@@ -42,7 +48,7 @@ class Results extends React.Component {
     }
 
     render() {
-        if (!this.props.result) return <Redirect to="/cal" />
+        // if (!this.props.result) return <Redirect to="/cal" />
         
         let currentUniResults = null;
         if (this.props.result && this.state.currentUni) {
@@ -57,14 +63,16 @@ class Results extends React.Component {
         }
 
         let startIndex = (this.state.pageNum - 1) * 15;
-        let uniButtons = Object.keys(uniNames).map(uni => {
-            return (
-                <button value={uni} onClick={this.changeUniHandler} key={uni}>
+        let uniButtons = Object.keys(uniNames)
+            .filter(uni => uniCategory[this.state.category].indexOf(uni) !== -1)
+            .map(uni => (
+                <button value={uni} onClick={this.changeUniHandler} key={uni}
+                    className={this.state.currentUni === uni ? 'selected' : ''}>
                     <h3>{uniNames[uni]}</h3>
                     <img src={logos[uni]} alt={uniNames[uni]}/>
                 </button>
             )
-        });
+        );
 
         return (
             <div className="resultPage">
@@ -72,6 +80,23 @@ class Results extends React.Component {
                     <CourseNote content={this.state.modalContent} close={this.closeModalToggler} />
                 </Backdrop>
                 <h3>計算結果</h3>
+                <div className="categorySelect" id="categorySelect">
+                    <button value="UGC"
+                        onClick={this.changeCategoryHandler}
+                        className={this.state.category === "UGC" ? 'selected' : ''}>
+                            UGC資助學位
+                    </button>
+                    <button value="SF" 
+                        onClick={this.changeCategoryHandler}
+                        className={this.state.category === "SF" ? 'selected' : ''}>
+                            自資學位
+                    </button>
+                    <button value="SSSDP"
+                        onClick={this.changeCategoryHandler}
+                        className={this.state.category === "SSSDP" ? 'selected' : ''}>
+                            SSSDP學位
+                    </button>
+                </div>
                 <div className="uniSelect" id="uniSelect">
                     {uniButtons}
                 </div>
