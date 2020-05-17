@@ -18,11 +18,11 @@ const getMethod = methods => {
             methodArray.push(countingMethods[method]);
         } else {
             specificSubjectCount += 1;
-            if (methodArray.indexOf('specific') === -1) methodArray.push('specific');
+            if (methodArray.indexOf('specific_placeholder') === -1) methodArray.push('specific_placeholder');
         }
     }
 
-    if (specificSubjectCount > 0) methodArray[methodArray.indexOf('specific')] = `指定${specificSubjectCount}科`;
+    if (specificSubjectCount > 0) methodArray[methodArray.indexOf('specific_placeholder')] = `指定${specificSubjectCount}科`;
     return methodArray.join('+');
 }
 
