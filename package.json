@@ -1,5 +1,5 @@
 {
-  "name": "HKDSE Score Calculator",
+  "name": "jupas-score-calculator",
   "version": "1.0.0",
   "private": true,
   "dependencies": {

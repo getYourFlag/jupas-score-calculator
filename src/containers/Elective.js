@@ -26,18 +26,6 @@ class Elective extends React.PureComponent {
                 break;
             }
         }
-        console.log(disabledElectives);
-
-        let optionList = Object.entries(subjects).map(([subjectCode, subjectName]) => {
-            return (
-                <option 
-                    key={subjectCode} 
-                    value={subjectCode} 
-                    disabled={disabledElectives.includes(subjectCode)}>
-                        {subjectName}
-                </option>
-            );
-        });
 
         let optionList = Object.entries(subjects).map(([subjectCode, subjectName]) => {
             return (
