@@ -16,7 +16,10 @@
 ### 現時支援之聯招課程（截至2019年1月2日）
 * JUPAS 9間大學之學士課程
 * 城大副學士課程 / 理大高級文憑課程
+<<<<<<< HEAD
 * SSSDP 課程
+=======
+>>>>>>> 832d6a26b8f6c112833ab36c86b4d41a04e12f3b
 
 ## 參考文件
 * [Wiki](https://github.com/getYourFlag/dsecal/wiki)
