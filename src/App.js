@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import NavBar from "./components/Navigation";
 import MainPage from "./components/MainPage";
@@ -34,9 +34,9 @@ class App extends Component {
           <React.Fragment>
             <NavBar drawer={this.openDrawerHandler}/>
             <SideDrawer show={this.state.showDrawer} drawer={this.closeDrawerHandler}/>
-              <Route exact path="/" render={() => <MainPage />} />
-              <Route path="/cal" render={() => <Calculator redirect={this.redirectHandler}/> }/>
-              <Route path="/result" render={() => <Results result={this.state.results}/>} />
+            <Route exact path="/" render={props => <MainPage {...props} />} />
+            <Route path="/cal" render={props => <Calculator redirect={this.redirectHandler} {...props} /> }/>
+            <Route path="/result" render={props => <Results result={this.state.results} {...props} />} />
           </React.Fragment>
         </Router>
         <Footer />

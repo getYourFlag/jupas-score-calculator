@@ -1,175 +1,105 @@
-import { courseData } from "../data/courseData.json";
-import otherLangScore from "../data/otherLangScore.json";
+import courseList from "../data/courseData.json";
+import Result from "../lib/Results";
+import { basicElectiveRequirements, otherLangRatio } from "../data/university.json"
 
-function main(scoreFromCalculator) {
+function calculate(score, isRetaker = false) {
     let calculateResult = {};
-    for (let course in courseData) {
-        let score = JSON.parse(JSON.stringify(scoreFromCalculator));
-        let chance = giveChance(score, courseData[course]);
-        calculateResult[course] = chance;
+    for (let courseCode in courseList) {
+        let course = courseList[courseCode];
+        if (!course.scores) continue;
+
+        let specifications = course.specifications || {};
+        specifications.otherLangRatio = otherLangRatio[course.school] || otherLangRatio.default;
+        let weighting = course.weighting || {};
+
+        let result = new Result(score, weighting, specifications);
+        calculateResult[courseCode] = calculateChance(result, course, isRetaker);
     }
     return calculateResult;
 }
 
-function giveChance(score, course) {
-    let eligibility = interpretEligibility(score, course); // Score object will be mutated.
+function calculateChance(result, course, isRetaker = false) {
+    let [electiveCount, electiveGrade] = basicElectiveRequirements[course.school] || [2, 1];
+    const requirements = course.requirements || {};
+
+    let eligibility = result.checkProgramRequirements(requirements, electiveCount, electiveGrade);
     if (!eligibility) return {chance: -1, score: "--"};
 
-    addWeighting(score, course); // Score object will be mutated.
-    let admissionScore = calculateScore(score, course);
+    let admissionScore = calculateScore(result, course);
 
-    return {chance: calculateChance(admissionScore, course), score: admissionScore};
+    if (course.specifications && course.specifications.retakeRatio && isRetaker) {
+        admissionScore = admissionScore * course.specifications.retakeRatio;
+    }
+
+    return {chance: giveChance(admissionScore, course), score: admissionScore};
 }
 
-function interpretEligibility(score, course) {
-    let require1ElectiveOnly = ["BU", "LU", "EDU", "OU"];
-    let electiveCount = course.electiveCount || (require1ElectiveOnly.includes(course.school) ? 1 : 2);
-    let electiveLevel = course.electiveLevel || (require1ElectiveOnly.includes(course.school) ? 2 : 3);
+function calculateScore(result, course) {
+    let resultScore = 0;
 
-    if (score.aMath) {
-        switch (course.extras.aMath) {
-            case undefined:
-            case false:
-                delete score.aMath;
-                break;
-            case "notForEntry":
-            case "math":
-                break;
-            default:
-                score.elective.aMath = score.aMath;
-        }
-    }
-    if (score.otherLang && course.extras.otherLang !== false) {
-        score.otherLang = score.otherLang.toUpperCase();
-        score.elective.otherLang = otherLangScore[course.school][score.otherLang];
-    } else { delete score.otherLang; }
+    for (let subject of course.countedSubjects) {
 
-    // Check mutual exclusions of score, indicated by "mutual" property in extra.
-    // Delete subjects that are not the highest in mutual exclusion scenarios.
-    if (course.extras.mutual) {
-        let highest = "";
-        let extras = Object.keys(course.extras).filter(v => v !== "mutual");
-        for (let subject in extras) {
-            if (score[subject] && (!score[highest] || score[subject] > score[highest])) highest = subject;
-        }
-        if (highest) {
-            for (let subject in extras) {
-                if (score[subject] && subject !== highest) delete score[subject];
-            }
-        }
-    }
+        if (typeof subject === 'number') {
 
-    if (score.chin < 3 || score.eng < 3 || score.math < 2 || score.ls < 2) return false; // Return false if score does not meet 3322.
-    /** ElectiveCount is used as the score required by electives during comparison.
-     *  Universities which require level 2 in electives require a minimum of 1 elective in intake.
-     *  Universities which require level 3 in electives require a minimum of 2 electives in intake.
-     * */ 
-    let numOfPassedElective = Object.values(score.elective).filter(v => v >= electiveLevel);
-    if (numOfPassedElective.length < electiveCount) return false;
+            resultScore += result.getBestSubjects(subject);
 
-    for (let subject in score.elective) {
-        score[subject] = score.elective[subject];
-    }
-    delete score.elective;
+        } else if (subject === 'main') {
 
-    let matchedSubject = []; // This array is used to prevent recalculate each subject for multiple times.
-    for (let subject in course.requirement) {
-        let result = matchCourseRequirement(score, subject, course.requirement[subject], matchedSubject)
-        if (!result) return false;
-        matchedSubject.push(result); // Add the calculated subject to array.
-    }
+            resultScore += result.getMain();
 
-    return true;
-}
+        } else if (subject.indexOf(':') !== -1) {
 
-function matchCourseRequirement(score, subject, target, matched) {
-    if (subject.indexOf(" ") !== -1) {
-        let newList = subject.split(" ");
-        for (let subSubject of newList) {
-            if (!score[subSubject] || matched.includes(subSubject)) continue;
-            if (matchCourseRequirement(score, subSubject, target, matched)) return subSubject;
-        }
-        return false;
-    }
-    if (!score[subject] || score[subject] < target) return false; 
-    return subject;
-}
+            const weightObject = parseWeightedSubjectString(subject);
+            resultScore += result.getBestSubjectWithCustomWeighting(weightObject, false);
 
-function addWeighting(score, course) {
-    let weightingList = Object.keys(course.weighting);
-
-    for (let item of weightingList) {
-        let subjectList = item.split(" ");
-        if (subjectList[0] === "highest") { // Check if the weighting applies to only the elective with highest score.
-            let maxSubject = null;
-            for (let subject in score) {
-                if (subjectList.includes(subject) && (score[subject] > score[maxSubject] || !maxSubject)) {
-                    maxSubject = subject;
-                }
-            }
-            if (score[maxSubject]) score[maxSubject] *= course.weighting[item];
         } else {
-            for (let subject in score) {
-                if (subjectList.includes(subject)) score[subject] *= course.weighting[item];
-            }
+
+            let includedSubjects = subject.split(" ");
+            resultScore += result.getBestSubject(includedSubjects);
+
         }
     }
 
-    if (typeof(course.extras.aMath) === "string" && course.extras.aMath.match(/math/)) {
-        if (score.aMath > score.math) {
-            score.math = score.aMath;
-            delete score.aMath;
-        }
-        if (course.extras.aMath === "math") delete score.aMath;
+    return resultScore;
+}
+
+function giveChance(admissionScore, course) {
+    if (course.specifications && course.specifications.minimumScore && admissionScore < course.specifications.minimumScore) return -1;
+
+    let median = course.scores.median;
+    let lq = course.scores.lq;
+    let diff = median - lq; // Difference between LQ & Median for estimation.
+    if (diff === 0) diff = Math.round(median / 20);
+    let uq = course.scores.uq || median + diff;
+    let min = course.scores.min || lq - diff;
+    if (admissionScore >= median) {
+        if (admissionScore > uq) return 4;
+        return 3;
+    } else if (admissionScore >= min) {
+        if (admissionScore >= lq) return 2;
+        return 1;
+    } else {
+        return 0;
     }
 }
 
-function calculateScore(score, course) {
-    let subjectCount = course.subjectCount;
-    let ownScore = 0;
-
-    for (let item of course.mustInclude) {
-        if (item === "MAIN") {
-            ownScore += (score.chin + score.eng + score.math + score.ls);
-            subjectCount -= 4;
-            delete score.chin;
-            delete score.eng;
-            delete score.math;
-            delete score.ls;
-            continue;
+function parseWeightedSubjectString(subjects) {
+    if (subjects.indexOf("/") !== -1) {
+        const subCategories = subjects.split("/");
+        let weighting = {}
+        for (let category of subCategories) {
+            weighting = Object.assign(weighting, parseWeightedSubjectString(category));
         }
-
-        let subjectList = item.split(" ");
-        if (subjectList.length > 1) {
-            let bestSubject = "";
-            for (let subject of subjectList) {
-                if (score[subject] && (bestSubject === "" || score[subject] > score[bestSubject])) bestSubject = subject;
-            }
-            subjectList[0] = bestSubject;
-        }
-        ownScore += score[subjectList[0]];
-        subjectCount--;
-        delete score[subjectList[0]];
+        return weighting;
     }
 
-    let remainingScore = Object.values(score).sort((a, b) => b > a);
-    for (let i = 0; i < subjectCount; i++) {
-        ownScore += remainingScore[i];
-    }
+    const weighting = {};
+    let [targetSubjects, ratio] = subjects.split(":");
+    targetSubjects = targetSubjects.split(" ");
+    ratio = parseFloat(ratio);
 
-    return ownScore;
+    targetSubjects.forEach(subject => weighting[subject] = ratio);
+    return weighting;
 }
 
-function calculateChance(admissionScore, course) {
-    let diff = course.median - course.lq; // Difference between LQ & Median for estimation.
-    if (diff === 0) diff = Math.round(course.median / 20);
-    let uq = course.uq || course.median + diff;
-    let min = course.min || course.lq - diff;
-    if (admissionScore > uq) return 4;
-    if (admissionScore >= course.median) return 3;
-    if (admissionScore >= course.lq) return 2;
-    if (admissionScore >= min) return 1;
-    return 0;
-}
-
-export default main;
+export default calculate;

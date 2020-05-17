@@ -1,0 +1,16 @@
+{
+    "admissionStyles": {
+        "4": ["有把握", "admVeryHigh"],
+        "3": ["高", "admHigh"],
+        "2": ["中", "admMid"],
+        "1": ["低", "admLow"],
+        "0": ["渺茫", "admNo"],
+        "-1": ["未達要求", "admImpossible"]
+    },
+    "countingMethods": {
+        "main": "主科",
+        "chinese": "中",
+        "english": "英",
+        "maths": "數"
+    }
+}

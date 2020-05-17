@@ -11,7 +11,8 @@ const NavBar = props => {
             <h3>綜合升學計分器</h3>
             <ul>
                 <li><Link to="/">主頁</Link></li>
-                <li><Link to="/cal">計算器</Link></li>
+                <li><Link to="/cal">輸入成績</Link></li>
+                <li><Link to="/result">計算結果</Link></li>
                 <li><Link to="/">演算法說明</Link></li>
                 <li><a href="https://github.com/getYourFlag/dsecal" target="blank">GitHub</a></li>
             </ul>
