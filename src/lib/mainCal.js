@@ -36,7 +36,6 @@ function calculateChance(result, course, isRetaker = false) {
 
 function calculateScore(result, course) {
     let resultScore = 0;
-    if (course.code === 'JS3052') debugger;
 
     for (let subject of course.countedSubjects) {
 

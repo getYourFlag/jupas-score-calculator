@@ -126,7 +126,8 @@ class Result {
         let bestSubjectScore = 0;
 
         if (!Array.isArray(exclude)) exclude = [];
-        if (useState) exclude.concat(this.calculatedSubjects);
+        if (useState) exclude = exclude.concat(this.calculatedSubjects);
+
         for (let subject in scores) {
             if (include && include.indexOf(subject) === -1) continue;
             if (exclude && exclude.indexOf(subject) !== -1) continue;
@@ -146,12 +147,12 @@ class Result {
         let bestSubjectName = "";
         let bestSubjectScore = 0;
         let excludes = useState ? this.calculatedSubjects : [];
-        let weightedSubjects = Object.keys(weighting);
 
         for (let subject in scores) {
+
             let subjScore = scores[subject];
             if (excludes.indexOf(subject) !== -1) continue;
-            if (weightedSubjects.indexOf(subject) !== -1) subjScore *= weighting[subject];
+            subjScore *= (weighting[subject] || 1);
             if (subjScore > bestSubjectScore) {
                 bestSubjectScore = subjScore;
                 bestSubjectName = subject;
