@@ -23,7 +23,7 @@ class Result {
 
             // Calculates bonus points for grade 5 or above (applicable for HKU)
             if (specifications.bonusFor5) {
-                weightedScore = (weightedScore - 4) * 0.5;
+                weightedScore += (weightedScore - 4) * 0.5;
             }
 
             // Calculate weighting;

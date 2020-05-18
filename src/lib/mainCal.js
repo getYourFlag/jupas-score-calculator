@@ -36,6 +36,7 @@ function calculateChance(result, course, isRetaker = false) {
 
 function calculateScore(result, course) {
     let resultScore = 0;
+    if (course.code === 'JS3052') debugger;
 
     for (let subject of course.countedSubjects) {
 
@@ -85,21 +86,12 @@ function giveChance(admissionScore, course) {
 
 function parseWeightedSubjectString(subjects) {
     if (subjects.indexOf("/") !== -1) {
-        const subCategories = subjects.split("/");
-        let weighting = {}
-        for (let category of subCategories) {
-            weighting = Object.assign(weighting, parseWeightedSubjectString(category));
-        }
-        return weighting;
+        return subjects.split("/").reduce((obj, category) => Object.assign(obj, parseWeightedSubjectString(category)), {});
     }
 
-    const weighting = {};
     let [targetSubjects, ratio] = subjects.split(":");
-    targetSubjects = targetSubjects.split(" ");
     ratio = parseFloat(ratio);
-
-    targetSubjects.forEach(subject => weighting[subject] = ratio);
-    return weighting;
+    return targetSubjects.split(" ").reduce((obj, subject) => Object.assign(obj, {[subject]: ratio}), {});
 }
 
 export default calculate;
