@@ -26,29 +26,31 @@ class Result {
                 weightedScore = (weightedScore - 4) * 0.5;
             }
 
-            // Calculate weighting
-            weighting = weighting[subject] || 1;
-            weightedScore *= weighting;
+            // Calculate weighting;
+            weightedScore *= (weighting[subject] || 1);
             this.score[subject] = weightedScore;
         }
 
         if (score.aMaths) {
+            let aMathsScore = score.aMaths;
+            if (specifications.bonusFor5 && aMathsScore >= 5) aMathsScore += (aMathsScore -4) * 0.5;
+
             switch (specifications.aMaths) {
                 case 'half-maths':
                     // Calculate maths score by 1/2 compulsory maths and 1/2 M1/M2 score.
-                    this.score.maths = score.maths * 0.5 + score.aMaths * 0.5;
+                    this.score.maths = score.maths * 0.5 + aMathsScore * 0.5;
                     break;
                 case 'discard':
-                    // Disregard M1/M2 results.
+                    // Not including M1/M2 results.
                     break;
                 case 'selective': 
                     // Treat M1/M2 as elective, but cannot be used in calculating entry requirements.
-                    this.score.aMaths = score.aMaths * (weighting.aMaths || 1);
+                    this.score.aMaths = aMathsScore * (weighting.aMaths || 1);
                     break;
                 default: 
                     // Treat M1/M2 as elective.
                     this.rawScore.aMaths = score.aMaths;
-                    this.score.aMaths = score.aMaths * (weighting.aMaths || 1);
+                    this.score.aMaths = aMathsScore * (weighting.aMaths || 1);
             }
         }
 
