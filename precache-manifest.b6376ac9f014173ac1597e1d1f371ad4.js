@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4e731ea6fc21b323abcf",
+    "revision": "ec6843e0cfb8f73c8a73",
     "url": "/jupas-score-calculator/static/css/main.71188798.chunk.css"
   },
   {
-    "revision": "4e731ea6fc21b323abcf",
-    "url": "/jupas-score-calculator/static/js/main.aae8b344.chunk.js"
+    "revision": "ec6843e0cfb8f73c8a73",
+    "url": "/jupas-score-calculator/static/js/main.0799b529.chunk.js"
   },
   {
     "revision": "03afee332621d604aab8",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/jupas-score-calculator/static/media/twc.68382be3.svg"
   },
   {
-    "revision": "2c8b9ed8089fba2e0fe8aba28ecc0bd8",
+    "revision": "77942ddd7652c31c07c751d77c66c259",
     "url": "/jupas-score-calculator/index.html"
   }
 ];
