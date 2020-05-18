@@ -12,7 +12,7 @@ function calculate(score, isRetaker = false) {
         specifications.otherLangRatio = otherLangRatio[course.school] || otherLangRatio.default;
         let weighting = course.weighting || {};
 
-        let result = new Result(score, weighting, specifications);
+        let result = new Result({...score}, weighting, specifications);
         calculateResult[courseCode] = calculateChance(result, course, isRetaker);
     }
     return calculateResult;
