@@ -3,32 +3,26 @@ import "./Calculator.css";
 import { Redirect } from "react-router-dom";
 
 import calculate from "../lib/mainCal";
-import InputField from "../components/InputField";
+import GradeSelector from "../components/UI/GradeSelector";
 import Elective from "./Elective";
-
-function parseResult(input) {
-    if (!input.match(/^[0-7]{1}\*{0,2}$/)) return null;
-    if (input.length === 1) return +input; // Return the number;
-    let firstNum = Number(input.substring(0, 1));
-    if (firstNum !== 5) return null; // Does not allow * appearing in grades other than 5.
-    return firstNum + input.length - 1;
-}
 
 class Calculator extends React.Component {
     state = {
         score: {},
         electiveCount: 1,
         electiveList: [],
-        aMath: false,
-        otherLang: false,
         error: false,
         calculated: false,
         retaker: false
     }
 
-    inputHandler = (type, event) => {
+    inputHandler = (subject, value) => {
         let score = {...this.state.score};
-        score[type] = parseResult(event.target.value);
+        if (value === null || value === this.state.score[subject]) {
+            delete score[subject];
+        } else {
+            score[subject] = value;
+        }
         this.setState({score: score});
     }
 
@@ -55,30 +49,6 @@ class Calculator extends React.Component {
         delete score[oldSubject];
         score[newSubject] = grade;
         this.setState({ score, electiveList });
-    }
-
-    aMathHandler = event => {
-        const score = {...this.state.score};
-        if (!event.target.checked && score.aMaths) {
-            delete score.aMaths
-        } 
-        this.setState({score, aMath: event.target.checked});
-    }
-
-    otherLangHandler = event => {
-        const score = {...this.state.score};
-        if (!event.target.checked && score.otherLang) {
-            delete score.otherLang
-        } 
-        this.setState({score, otherLang: event.target.checked});
-    }
-
-    otherLangChangeHandler = event => {
-        let score = {...this.state.score};
-        let character = event.target.value;
-        if (!["A", "B", "C", "D", "E", "F"].includes(character.toUpperCase())) character = null;
-        score.otherLang = character;
-        this.setState({ score: score });
     }
 
     electiveDeleteHandler = (name) => {
@@ -139,7 +109,8 @@ class Calculator extends React.Component {
                     scoreChange={this.inputHandler} 
                     electiveList={this.state.electiveList} 
                     cleanup={this.electiveDeleteHandler}
-                    changeElective={this.electiveChangeHandler} />);
+                    subjectChange={this.electiveChangeHandler} 
+                />);
         }
 
         return (
@@ -155,23 +126,19 @@ class Calculator extends React.Component {
 
                     <p><span>主修科目</span></p>
                     <div className="inputContainer">
-                        <InputField id="chinese" changed={event => this.inputHandler("chinese", event)}>中文：</InputField>
-                        <InputField id="english" changed={event => this.inputHandler("english", event)}>英文：</InputField>
-                        <InputField id="maths" changed={event => this.inputHandler("maths", event)}>數學：</InputField>
-                        <InputField id="ls" changed={event => this.inputHandler("ls", event)}>通識：</InputField>
+                        <GradeSelector input={value => this.inputHandler("chinese", value)} selected={this.state.score.chinese}>中文：</GradeSelector>
+                        <GradeSelector input={value => this.inputHandler("english", value)} selected={this.state.score.english}>英文：</GradeSelector>
+                        <GradeSelector input={value => this.inputHandler("maths", value)} selected={this.state.score.maths}>數學：</GradeSelector>
+                        <GradeSelector input={value => this.inputHandler("ls", value)} selected={this.state.score.ls}>通識：</GradeSelector>
                     </div>
 
                     <p><span>數學延伸部分（ M1/M2 ）</span></p>
                     <div className="inputContainer">
-                        <div>
-                            <label>有否修讀：</label><input type="checkbox" onChange={this.aMathHandler}/>
-                        </div>
-                        {this.state.aMath ? (
-                            <InputField 
-                                id="aMaths" 
-                                changed={event => this.inputHandler("aMaths", event)}
-                            >成績：</InputField>
-                        ): null}
+                        <GradeSelector 
+                            nullable
+                            input={value => this.inputHandler('aMaths', value)}
+                            selected={this.state.score.aMaths ? this.state.score.aMaths : null}
+                        >成績：</GradeSelector>
                     </div>
 
                     <p><span>甲類選修科目</span></p>
@@ -188,15 +155,15 @@ class Calculator extends React.Component {
 
                     <p><span>其他語言科目</span></p>
                     <div className="inputContainer">
-                        <div>
-                            <label>有否修讀：</label><input type="checkbox" onChange={this.otherLangHandler}/>
-                        </div>
-                        {this.state.otherLang ? (
-                            <InputField 
-                                id="otherLang" 
-                                changed={this.otherLangChangeHandler}
-                            >成績：</InputField>
-                        ) : null}
+                        <GradeSelector 
+                            nullable
+                            input={value => this.inputHandler('otherLang', value)}
+                            selected={this.state.score.otherLang ? this.state.score.otherLang : null}
+                            options={['A', 'B', 'C', 'D', 'E', 'F']}
+                            display={['A', 'B', 'C', 'D', 'E', 'F'].reduce((obj, value) => ({...obj, [value]: value}), {})}
+                        >
+                            成績：
+                        </GradeSelector>
                     </div>
 
                     <p><span>考生資料</span></p>

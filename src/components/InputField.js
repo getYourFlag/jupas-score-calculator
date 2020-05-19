@@ -1,11 +1,15 @@
 import React from "react";
 import "./InputField.css";
 
+import GradeSelector from './UI/GradeSelector';
+
 const InputField = props => {
     return (
         <div className="inputFields">
-            <label>{props.children}</label>
-            <input type="text" id={props.id} onChange={props.changed} />
+            <span>{props.children}</span>
+            <GradeSelector
+                {...props}
+            />
         </div>
     )
 }

@@ -63,7 +63,7 @@
     transition: 0.2s;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 800px) {
     .NavBar ul {
         display: none;
     }

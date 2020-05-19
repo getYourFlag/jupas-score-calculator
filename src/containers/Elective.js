@@ -1,27 +1,33 @@
 import React from "react";
 
 import "./Elective.css";
-import "../components/InputField";
+import GradeSelector from "../components/UI/GradeSelector";
 import { subjects, prohibitedCombinations } from "../data/subjects.json";
 
 class Elective extends React.PureComponent {
     state = {
-        value: "",
+        subjectName: "",
+        subjectGrade: 0
     }
 
-    selectChangeHandler = (event) => {
-        this.props.changeElective(this.state.value, event.target.value);
-        this.setState({ value: event.target.value });
+    subjectChangeHandler = (event) => {
+        this.props.subjectChange(this.state.subjectName, event.target.value);
+        this.setState({ subjectName: event.target.value });
+    }
+
+    scoreChangeHandler = value => {
+        this.props.scoreChange(this.state.subjectName, value);
+        this.setState({ subjectGrade: value });
     }
 
     componentWillUnmount() {
-        this.props.cleanup(this.state.value);
+        this.props.cleanup(this.state.subjectName);
     }
 
     render() {
         let disabledElectives = [...this.props.electiveList];
         for (let subjectCode of disabledElectives) {
-            if (prohibitedCombinations[subjectCode] && this.state.value !== subjectCode) {
+            if (prohibitedCombinations[subjectCode] && this.state.subjectName !== subjectCode) {
                 disabledElectives = disabledElectives.concat(prohibitedCombinations[subjectCode]);
                 break;
             }
@@ -40,15 +46,15 @@ class Elective extends React.PureComponent {
 
         return (
         <div className="electiveInput">
-            <select className="dropdown" id={this.props.keyId} value={this.state.value} required onChange={this.selectChangeHandler}>
+            <select className="dropdown" id={this.props.keyId} value={this.state.subjectName} required onChange={this.subjectChangeHandler}>
                 <option value="" disabled>請選擇科目</option>
                 {optionList}
             </select>
-            {this.state.value ? 
-                <div className="electiveFields">
-                    <label>成績：</label>
-                    <input type="text" onChange={event => this.props.scoreChange(this.state.value, event)} />
-                </div>: null}
+            {this.state.subjectName ?
+                <GradeSelector selected={this.state.subjectGrade} input={this.scoreChangeHandler}>
+                    成績：
+                </GradeSelector>
+            : null}
         </div>
         );
     }

@@ -74,7 +74,7 @@
     font-size: 1rem;
     border: 1px solid #888;
     border-radius: 15px;
-    background-color: rgb(255, 248, 239);
+    background-color: rgb(255, 233, 203);
 }
 
 .submit button:hover,
@@ -112,10 +112,5 @@
         flex-direction: column;
         justify-items: flex-start;
         padding: 1%;
-    }
-
-    .inputFields {
-        padding: 2% 0;
-        width: 90%;
     }
 }

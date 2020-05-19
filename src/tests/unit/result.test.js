@@ -174,6 +174,12 @@ test('checkProgramRequirements can validate failing main subject requirements', 
     expect(lawResult.checkProgramRequirements(requirements)).toBe(false);
 });
 
+test('checkProgramRequirements can validate passing HD requirements only', () => {
+    let {weighting, specifications, school, requirements} = courseData['1091'];
+    const result = new Result({...demoScore, chinese: 2}, weighting, specifications, school);
+    expect(result.checkProgramRequirements(requirements)).toBe(true);
+});
+
 test('checkProgramRequirements can check unmet elective score requirements', () => {
     let lowScore = {...demoScore, ICT: 2};
     let {weighting, specifications, school, requirements} = courseData['5200'];

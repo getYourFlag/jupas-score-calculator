@@ -1,9 +1,13 @@
 .inputFields {
-    width: 50%;
+    width: auto;
     box-sizing: border-box;
     padding: 2% 2%;
     font-size: 1rem;
     font-family: "Noto Serif TC", serif;
+}
+
+.inputFields label {
+    font-size: 1rem;
 }
 
 .inputFields input {
@@ -15,9 +19,13 @@
     border-radius: 5px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .inputFields {
         padding: 2% 0;
         width: 90%;
+    }
+
+    .inputFields label {
+        font-size: 1rem;
     }
 }

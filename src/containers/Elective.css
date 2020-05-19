@@ -18,24 +18,18 @@
 }
 
 .electiveFields {
-    width: 50%;
+    width: auto;
     box-sizing: border-box;
     padding: 0 2%;
     font-size: 1rem;
     font-family: "Noto Serif TC", serif;
 }
 
-.electiveFields input {
-    display: inline-block;
-    height: auto;
-    width: 50%;
-    font-size: 1rem;
-    padding: 2% 3%;
-    border: 1px solid black;
-    border-radius: 5px;
+.electiveFields span {
+    font-size: 1.25rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .electiveInput {
         flex-direction: column;
     }

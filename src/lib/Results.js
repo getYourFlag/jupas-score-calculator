@@ -21,6 +21,7 @@ class Result {
         this.score = {};
         this.rawScore = {};
         this.calculatedSubjects = [];
+        this.courseLevel = specifications.highDiploma ? 'subDegree' : 'degree';
 
         for (let subject in score) {
             if (specialSubjects.indexOf(subject) !== -1) continue;
@@ -119,7 +120,7 @@ class Result {
     checkProgramRequirements(requirements) {
         requirements = Object.assign({}, requirements);
 
-        let checkBasicRequirements = requirements.highDiploma ? this.checkHighDiplomaRequirements : this.checkUniversityRequirements;
+        let checkBasicRequirements = this.courseLevel === 'subDegree' ? this.checkHighDiplomaRequirements : this.checkUniversityRequirements;
         if (!checkBasicRequirements.call(this)) return false;
 
         if (requirements.minimumScore) {
