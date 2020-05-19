@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jupas-score-calculator/precache-manifest.96c0643e684f063f183b91461fa5d3ac.js"
+  "/jupas-score-calculator/precache-manifest.2b99310a58a41e404efe1beb2f4f8e5e.js"
 );
 
 workbox.clientsClaim();
