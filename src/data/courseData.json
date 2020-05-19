@@ -827,7 +827,8 @@
         "weighting": {
             "english": 2,
             "maths": 1.5
-        }
+        },
+        "specifications": { "discardOtherLang": true }
     },
     "1213": {
         "code": "JS1213",
@@ -850,6 +851,7 @@
             "english": 2,
             "maths": 1.5
         },
+        "specifications": { "discardOtherLang": true },
         "notice": "本學科為2019年聯招學科JS1201之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "1214": {
@@ -873,6 +875,7 @@
             "english": 2,
             "maths": 1.5
         },
+        "specifications": { "discardOtherLang": true },
         "notice": "本學科為2019年聯招學科JS1201之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "1215": {
@@ -896,6 +899,7 @@
             "english": 2,
             "maths": 1.5
         },
+        "specifications": { "discardOtherLang": true },
         "notice": "本學科為2019年聯招學科JS1201之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "1801": {
@@ -913,6 +917,7 @@
             "median": 34,
             "lq": 33
         },
+        "specifications": { "discardOtherLang": true },
         "countedSubjects": ["main", 2]
     },
     "1805": {
@@ -946,7 +951,8 @@
             "ICT": 1.5,
             "IS": 1.5,
             "aMaths": 1.5
-        }
+        },
+        "specifications": { "discardOtherLang": true }
     },
     "1806": {
         "code": "JS1806",
@@ -980,6 +986,7 @@
             "IS": 1.5,
             "aMaths": 1.5
         },
+        "specifications": { "discardOtherLang": true },
         "notice": "本學科為2019年聯招學科JS1203之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "1807": {
@@ -1014,6 +1021,7 @@
             "IS": 1.5,
             "aMaths": 1.5
         },
+        "specifications": { "discardOtherLang": true },
         "notice": "本學科為2019年聯招學科JS1203之分拆學科，參考收生分數取自上年之綜合學科。"
     },
     "2020": {

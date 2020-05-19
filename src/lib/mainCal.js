@@ -56,6 +56,7 @@ function calculateScore(result, subjectArray) {
 }
 
 function giveChance(admissionScore, scores) {
+    admissionScore = +admissionScore.toFixed(2) // Round to 2 decimals to prevent floating point inaccuracy in comparison.
     const { median, lq } = scores;
 
     let diff = median - lq; // Difference between LQ & Median for estimation.
