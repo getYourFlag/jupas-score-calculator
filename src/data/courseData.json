@@ -2403,15 +2403,14 @@
             "ls": 3,
             "maths": 3,
             "Bio Chem": 3,
-            "maxGradeSubjects": 4
+            "minimumScore": 46
         },
         "scores": {
             "uq": 40,
             "median": 40,
             "lq": 40
         },
-        "countedSubjects": ["main", 2],
-        "specifications": { "minimumScore": 46 }
+        "countedSubjects": ["main", 2]
     },
     "4513": {
         "code": "JS4513",

@@ -1,8 +1,10 @@
+import { basicElectiveRequirements, otherLangRatio } from "../data/university.json"
+
 const mainSubjects = ['chinese', 'english', 'maths', 'ls'];
 const specialSubjects = ['aMaths', 'otherLang'];
 
 class Result {
-    constructor(score, weighting, specifications) {
+    constructor(score, weighting, specifications, school) {
         if (typeof score !== 'object' || score === null) {
             throw new TypeError("No score object is given!");
         }
@@ -11,7 +13,11 @@ class Result {
             if (!score[subject]) throw new TypeError(`Core subject ${subject} is not found!`);
         }
 
-        this.electives = [];
+        if (!specifications) specifications = Object.create(null);
+        if (!weighting) weighting = Object.create(null);
+        score = Object.assign({}, score);
+
+        this.school = school;
         this.score = {};
         this.rawScore = {};
         this.calculatedSubjects = [];
@@ -54,38 +60,44 @@ class Result {
             }
         }
 
-        if (score.otherLang && specifications.discardOtherLang !== true) {
-            this.score.otherLang = specifications.otherLangRatio[score.otherLang];
-            this.rawScore.otherLang = this.score.otherLang;
+        if (score.otherLang && specifications.discardOtherLang !== true && otherLangRatio[this.school]) {
+            this.rawScore.otherLang = otherLangRatio[this.school][score.otherLang];
+            this.score.otherLang = this.rawScore.otherLang;
         }
 
         if (specifications.weightingLimit) {
-            let limit = specifications.weightingLimit;
-            let weightedSubjects = Object.keys(this.score).filter(key => weighting[key] !== undefined);
+            let subjectWithWeighting = [];
+            for (let subject in this.score) {
 
-            if (weightedSubjects.length > limit) {
-                let highestWeightedSubjects = [];
-                weightedSubjects.forEach(subject => {
-                    if (Object.keys(highestWeightedSubjects).length < limit) {
-                        highestWeightedSubjects.push(subject);
-                    } else {
-                        for (let remainingSubject in highestWeightedSubjects) {
-                            if (this.score[subject] > this.score[remainingSubject]) {
-                                this.score[remainingSubject] = this.score[remainingSubject] / weighting[remainingSubject];
-                                highestWeightedSubjects.push(subject);
-                            }
-                        }
-                    }
+                if (!weighting[subject]) continue;
+                if (subjectWithWeighting.length < specifications.weightingLimit) {
+                    subjectWithWeighting.push(subject);
+                    continue;
+                }
+
+                // Get the lowest weighted score in this.score by Array.reduce
+                let lowestSubject = subjectWithWeighting.reduce((value, currentSubject) => {
+                    if (value === '' || this.score[currentSubject] < this.score[value]) return currentSubject;
+                    return value;
                 });
+
+                if (this.score[subject] > this.score[lowestSubject]) {
+                    subjectWithWeighting[subjectWithWeighting.indexOf(lowestSubject)] = subject;
+                    this.score[lowestSubject] = this.score[lowestSubject] / weighting[lowestSubject];
+                } else {
+                    this.score[subject] = this.score[subject] / weighting[subject];
+                }
             }
         }
     }
 
-    checkUniversityRequirements(electiveMinGrade = 2, electiveMinCount = 1) {
+    checkUniversityRequirements() {
         if (this.rawScore.chinese < 3 || this.rawScore.english < 3 || this.rawScore.maths < 2 || this.rawScore.ls < 2) return false;
-        let countedElectives = [];
+
+        const [electiveMinGrade, electiveMinCount] = basicElectiveRequirements[this.school] || [2, 1];
+        const countedElectives = [];
         for (let i = 0; i < electiveMinCount; i++) {
-            let [name, score] = this.getBestElectiveStateless(null, countedElectives, true, true);
+            let [name, score] = this.getBestSubjectStateless(null, countedElectives.concat(mainSubjects), true, true);
             if (score < electiveMinGrade) return false;
             countedElectives.push(name);
         }
@@ -94,27 +106,34 @@ class Result {
 
     checkHighDiplomaRequirements() {
         if (this.rawScore.chinese < 2 || this.rawScore.english < 2) return false;
-        return this.getBestSubjects(3, null, ['chinese', 'english'], true, false) >= 6;
+
+        const countedSubjects = ["chinese", "english"];
+        for (let i = 0; i < 3; i++) {
+            let [name, score] = this.getBestSubjectStateless(null, countedSubjects, true, true);
+            if (score < 2) return false;
+            countedSubjects.push(name);
+        }
+        return true;
     }
 
-    checkProgramRequirements(requirements, electiveMinGrade, electiveMinCount) {
-        requirements = requirements || {};
-        let checkBasicRequirements = requirements.highDiploma ? this.checkHighDiplomaRequirements : this.checkUniversityRequirements;
-        if (!checkBasicRequirements.call(this, electiveMinGrade, electiveMinCount)) return false;
+    checkProgramRequirements(requirements) {
+        requirements = Object.assign({}, requirements);
 
-        if (requirements.maxGradeSubjects) {
-            let maxGradeSubjects = Object.values(this.rawScore).filter(v => v === 7);
-            if (maxGradeSubjects.length < requirements.maxGradeSubjects) return false;
-            delete requirements.maxGradeSubjects;
+        let checkBasicRequirements = requirements.highDiploma ? this.checkHighDiplomaRequirements : this.checkUniversityRequirements;
+        if (!checkBasicRequirements.call(this)) return false;
+
+        if (requirements.minimumScore) {
+            let totalScore = this.getBestSubjects(7, null, null, true, false);
+            if (totalScore < requirements.minimumScore) return false;
+            delete requirements.minimumScore;
         }
 
         let testedSubjects = [];
-        for (let req in requirements) {
-            let requiredSubjects = req.split(" "); // Deal with get-one-then-satisfy subject requirements.
-            let requiredGrade = requirements[req];
+        for (let [subjects, grade] of Object.entries(requirements)) {
+            subjects = subjects.split(" "); // Deal with get-one-then-satisfy subject requirements.
 
-            let [subjectName, score] = this.getBestSubjectStateless(requiredSubjects, testedSubjects, true, true);
-            if (subjectName === "" || score < requiredGrade) return false;
+            let [subjectName, score] = this.getBestSubjectStateless(subjects, testedSubjects, true, true);
+            if (subjectName === "" || score < grade) return false;
             testedSubjects.push(subjectName);
         }
         return true;
@@ -153,7 +172,7 @@ class Result {
             let subjScore = scores[subject];
             if (excludes.indexOf(subject) !== -1) continue;
             subjScore *= (weighting[subject] || 1);
-            if (subjScore > bestSubjectScore) {
+            if (subjScore > bestSubjectScore || (weighting[subject] && !weighting[bestSubjectName])) {
                 bestSubjectScore = subjScore;
                 bestSubjectName = subject;
             }
@@ -170,28 +189,17 @@ class Result {
 
     getBestSubjects(count = 1, include = null, exclude = null, rawScore = false, useState = true) {
         let totalScore = 0;
+        exclude = Array.isArray(exclude) ? exclude : [];
         for (let i = 0; i < count; i++) {
-            totalScore += this.getBestSubject(include, exclude, rawScore, false, useState);
+            let [subjectName, subjectScore] = this.getBestSubject(include, exclude, rawScore, true, useState);
+            totalScore += subjectScore;
+            if (!useState) exclude.push(subjectName);
         }
         return totalScore;
     }
 
-    getBestElective(include = null, exclude = null, rawScore = false, getSubjectName = false, useState = true) {
-        if (!Array.isArray(exclude)) exclude = [];
-        return this.getBestSubject(include, exclude.concat(mainSubjects), rawScore, getSubjectName, useState);
-    }
-
-    getBestElectiveStateless(include = null, exclude = null, rawScore = false, getSubjectName = false) {
-        return this.getBestElective(include, exclude, rawScore, getSubjectName, false);
-    }
-
-    getBestElectives(count = 1, include = null, exclude = null, rawScore = false, useState = true) {
-        if (!Array.isArray(exclude)) exclude = [];
-        return this.getBestSubjects(count, include, exclude.concat(mainSubjects), rawScore, useState);
-    }
-
     getMain() {
-        this.calculatedSubjects.concat(mainSubjects);
+        this.calculatedSubjects = this.calculatedSubjects.concat(mainSubjects);
         return this.score.chinese + this.score.english + this.score.maths + this.score.ls;
     }
 }

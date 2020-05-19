@@ -1,6 +1,5 @@
 import courseList from "../data/courseData.json";
 import Result from "../lib/Results";
-import { basicElectiveRequirements, otherLangRatio } from "../data/university.json"
 
 function calculate(score, isRetaker = false) {
     let calculateResult = {};
@@ -8,70 +7,63 @@ function calculate(score, isRetaker = false) {
         let course = courseList[courseCode];
         if (!course.scores) continue;
 
-        let specifications = course.specifications || {};
-        specifications.otherLangRatio = otherLangRatio[course.school] || otherLangRatio.default;
-        let weighting = course.weighting || {};
-
-        let result = new Result({...score}, weighting, specifications);
+        let result = new Result(score, course.weighting, course.specifications, course.school);
         calculateResult[courseCode] = calculateChance(result, course, isRetaker);
     }
     return calculateResult;
 }
 
 function calculateChance(result, course, isRetaker = false) {
-    let [electiveCount, electiveGrade] = basicElectiveRequirements[course.school] || [2, 1];
-    const requirements = course.requirements || {};
-
-    let eligibility = result.checkProgramRequirements(requirements, electiveCount, electiveGrade);
+    let eligibility = result.checkProgramRequirements(course.requirements);
     if (!eligibility) return {chance: -1, score: "--"};
 
-    let admissionScore = calculateScore(result, course);
+    let admissionScore = calculateScore(result, course.countedSubjects);
 
     if (course.specifications && course.specifications.retakeRatio && isRetaker) {
         admissionScore = admissionScore * course.specifications.retakeRatio;
     }
 
-    return {chance: giveChance(admissionScore, course), score: admissionScore};
+    return {chance: giveChance(admissionScore, course.scores), score: admissionScore};
 }
 
-function calculateScore(result, course) {
-    let resultScore = 0;
+function calculateScore(result, subjectArray) {
+    let admissionScore = 0;
 
-    for (let subject of course.countedSubjects) {
+    for (let subject of subjectArray) {
 
         if (typeof subject === 'number') {
 
-            resultScore += result.getBestSubjects(subject);
+            admissionScore += result.getBestSubjects(subject);
 
         } else if (subject === 'main') {
 
-            resultScore += result.getMain();
+            admissionScore += result.getMain();
 
         } else if (subject.indexOf(':') !== -1) {
 
             const weightObject = parseWeightedSubjectString(subject);
-            resultScore += result.getBestSubjectWithCustomWeighting(weightObject, false);
+            admissionScore += result.getBestSubjectWithCustomWeighting(weightObject, false);
 
         } else {
 
-            let includedSubjects = subject.split(" ");
-            resultScore += result.getBestSubject(includedSubjects);
+            const includedSubjects = subject.split(" ");
+            admissionScore += result.getBestSubject(includedSubjects);
 
         }
     }
 
-    return resultScore;
+    return admissionScore;
 }
 
-function giveChance(admissionScore, course) {
-    if (course.specifications && course.specifications.minimumScore && admissionScore < course.specifications.minimumScore) return -1;
+function giveChance(admissionScore, scores) {
+    const { median, lq } = scores;
 
-    let median = course.scores.median;
-    let lq = course.scores.lq;
     let diff = median - lq; // Difference between LQ & Median for estimation.
     if (diff === 0) diff = Math.round(median / 20);
-    let uq = course.scores.uq || median + diff;
-    let min = course.scores.min || lq - diff;
+
+    const uq = scores.uq || median + diff;
+    const min = scores.min || lq - diff;
+
     if (admissionScore >= median) {
         if (admissionScore > uq) return 4;
         return 3;
@@ -90,7 +82,8 @@ function parseWeightedSubjectString(subjects) {
 
     let [targetSubjects, ratio] = subjects.split(":");
     ratio = parseFloat(ratio);
-    return targetSubjects.split(" ").reduce((obj, subject) => Object.assign(obj, {[subject]: ratio}), {});
+    return targetSubjects.split(" ").reduce((obj, subject) => subject !== "" ? Object.assign(obj, {[subject]: ratio}) : obj, {});
 }
 
 export default calculate;
+export { calculate, calculateScore, calculateChance, giveChance, parseWeightedSubjectString };
