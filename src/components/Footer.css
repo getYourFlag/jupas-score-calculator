@@ -1,12 +1,16 @@
 .footer {
+    height: 2rem;
     background-color: #222;
     margin: 0;
     padding: 1% 2%;
+    display: flex;
+    align-items: center;
 }
 
 .footer p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: white;
     font-family: "Noto Serif TC", serif;
     text-align: center;
+    margin: 0 auto;
 }

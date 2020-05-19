@@ -30,15 +30,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router basename={process.env.PUBLIC_URL}>
-          <React.Fragment>
-            <NavBar drawer={this.openDrawerHandler}/>
-            <SideDrawer show={this.state.showDrawer} drawer={this.closeDrawerHandler}/>
-            <Route exact path="/" render={props => <MainPage {...props} />} />
-            <Route path="/cal" render={props => <Calculator redirect={this.redirectHandler} {...props} /> }/>
-            <Route path="/result" render={props => <Results result={this.state.results} {...props} />} />
-          </React.Fragment>
-        </Router>
+        <div className='content-wrapper'>
+          <Router basename={process.env.PUBLIC_URL}>
+            <React.Fragment>
+              <NavBar drawer={this.openDrawerHandler}/>
+              <SideDrawer show={this.state.showDrawer} drawer={this.closeDrawerHandler}/>
+              <Route exact path="/" render={props => <MainPage {...props} />} />
+              <Route path="/cal" render={props => <Calculator redirect={this.redirectHandler} {...props} /> }/>
+              <Route path="/result" render={props => <Results result={this.state.results} {...props} />} />
+            </React.Fragment>
+          </Router>
+        </div>
         <Footer />
       </div>
     );
