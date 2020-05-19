@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "ddfe038b73749293ed40",
-    "url": "/jupas-score-calculator/static/css/main.71188798.chunk.css"
+    "revision": "ed3cb5a787a0bca430e7",
+    "url": "/jupas-score-calculator/static/css/main.86215684.chunk.css"
   },
   {
-    "revision": "ddfe038b73749293ed40",
-    "url": "/jupas-score-calculator/static/js/main.d7c3672f.chunk.js"
+    "revision": "ed3cb5a787a0bca430e7",
+    "url": "/jupas-score-calculator/static/js/main.e06b0a56.chunk.js"
   },
   {
     "revision": "03afee332621d604aab8",
     "url": "/jupas-score-calculator/static/js/runtime~main.9e60adaa.js"
   },
   {
-    "revision": "ecfd1b29db9bd7267679",
-    "url": "/jupas-score-calculator/static/js/2.68b563d3.chunk.js"
+    "revision": "e9f8086920cf99c5cf3a",
+    "url": "/jupas-score-calculator/static/js/2.e565bda6.chunk.js"
   },
   {
     "revision": "f440b64b2ff57bdaeaf89abd98ee2ab3",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/jupas-score-calculator/static/media/twc.68382be3.svg"
   },
   {
-    "revision": "d6a32a3cf7d7acc59104879f6ba18d7e",
+    "revision": "10e5f9eeb1068cfca37557525de045c3",
     "url": "/jupas-score-calculator/index.html"
   }
 ];
