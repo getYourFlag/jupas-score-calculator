@@ -1,0 +1,52 @@
+.grade-selector-container {
+    display: flex;
+    width: auto;
+    box-sizing: border-box;
+    padding: 2% 2%;
+    font-size: 1rem;
+    font-family: "Noto Serif TC", serif;
+    align-items: center;
+}
+
+.grade-selector {
+    display: flex;
+    width: auto;
+    border: 1px solid #222;
+    border-radius: 0.25rem;
+}
+
+.grade-selector div:hover {
+    background-color: rgb(255, 233, 203);
+    transition: 0.2s ease-out;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.grade-selector div.selected {
+    background-color: rgb(248, 196, 129);
+}
+
+.grade-selector div {
+    padding: 0 1rem;
+}
+
+.grade-selector p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.grade-selector div:not(:last-child) {
+    border-right: 1px solid #222;
+}
+
+@media (max-width: 800px) {
+    .grade-selector-container {
+        padding: 2% 0;
+    }
+    .grade-selector p {
+        margin-top: 0.125rem;
+        margin-bottom: 0.125rem;
+    }
+}
